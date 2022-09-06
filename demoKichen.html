@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #main{
+            display: grid;
+        }
+         .top{
+            width: 100%;
+            border-top: 3px solid#2c4152;
+            background-color: beige;
+            border-bottom: 2px solid#e0e0e0;
+            position: fixed;
+            font-family: SourceSansPro;
+            top: 0;
+        }
+        .logo{
+            float: left;
+            position: relative;
+            width: 10%;
+        }
+        .options{
+            display: flex;
+            justify-content: space-around;
+            float: right;
+            gap: 20px;
+            width: 60%;
+        }
+        #parent{
+            display: flex;
+            margin-top: 30px;
+        }
+        #filter{
+            display: grid;
+            max-height: 500px;
+            width: 23%;
+            position: sticky;
+            top: 0px;
+            row-gap:none;
+            
+        }
+        #container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+            
+        }
+        #container > div {
+            
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            text-align: center;
+        }
+        h5 + div{
+            display: flex;
+            justify-content: space-around;
+        }
+        h5 + div > p:last-child{
+            text-decoration: line-through;
+        }
+        img {
+            width: 100%;
+            
+        }
+        button{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="top">
+            <header>
+                <div class="logo">
+                    <a href="HomePage.html"><img width="130px" src="https://assets.ajio.com/static/img/Ajio-Logo.svg" alt="Ajio-Logo"></a>
+                </div>
+                <div class="options">
+               <a href="">Men</a>
+               <a href="womensData.html">Women</a>
+               <a href="">Kids</a>
+               <a href="">Households & Kitchen</a>
+               <a href="">Sighup</a>
+               <a href="">Login</a>
+               <a href="">WishList</a>
+               <a href="">Cart</a>
+                </div>
+            </header>
+        </div>
+        <div id="parent">
+        <div id = "filter">
+            <h2>CATEGORY</h2>
+            <div id="btn1">
+                <button >BED LINEN</button>
+            </div>
+            <div id="btn2">
+                <button >Saree</button>
+            </div>
+            <div id="btn3">
+                <button >footwear</button>
+            </div>
+            <div id="btn4">
+                <button >Beauty Product</button>
+            </div>
+            <div id="btn5">
+                <button >jewellary</button>
+            </div>
+            <select name="" id="filterByPrice">
+                <option value="none">Select By Price</option>
+                <option value="increasing">Low to High</option>
+                <option value="decreasing">High to Low</option>
+            </select>
+        </div>
+        <div id="container">
+    
+        </div>
+    </div>
+    </div>
+</body>
+</html>
+<script>
+    var homedata =[
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220602/Gtek/6297c377f997dd03e25a0144/portico_pink_144_tc_floral_print_super_king_size_bedsheet_with_pillow_covers.jpg",
+        brandName:"PORTICO",
+        name:"144 TC King Size BedSheet With Pillow Cover",
+        price:"2199",
+        strikedoffPrice:"2750",
+        filter:"BED LINEN",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220121/e3sY/61ea0d55aeb2695cdd22e874/homez_sparrow_multicoloured_104_tc_floral_print_double_size_bedsheet_with_pillow_covers.jpg",
+        brandName:"HOMEZ SPARROW",
+        name:"104 TC King DoubleSize BedSheet With Pillow Cover",
+        price:"499",
+        strikedoffPrice:"799",
+        filter:"BED LINEN",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20211116/n6lh/6192a7dbaeb2690110c51aeb/good_homes_blue_checked_144_tc_double_bedsheet_with_2_pillow_covers.jpg",
+        brandName:"GOOD HOMEZ",
+        name:"104 TC King DoubleSize BedSheet With Pillow Cover",
+        price:"599",
+        strikedoffPrice:"1199",
+        filter:"BED LINEN",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220721/kCaY/62d9689faeb26921af8c7e70/portico_multicoloured_210_tc_ornamental_super_king_bedsheet_with_pillow_covers.jpg",
+        brandName:"COUNTRY HOME",
+        name:"stripped Double Bedsheet With Pillow Cover",
+        price:"609",
+        strikedoffPrice:"2100",
+        filter:"BED LINEN",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220413/7vbk/6256e23bf997dd03e25aef8b/trance_home_linen_grey_set_of_6_striped_diwan_set.jpg",
+        brandName:"TRANCE HOME LINEN",
+        name:"Set of 6 Striped Dewan Set",
+        price:"1623",
+        strikedoffPrice:"2499",
+        filter:"BED LINEN",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220228/S1tq/621cb31daeb26921afba4de6/homefab_india_cream_140_tc_leaf_print_single_microfiber_diwan_set.jpg",
+        brandName:"HOMEFAB INDIA",
+        name:"Leaf Printed Single Microfiber Diwan Set",
+        price:"540",
+        strikedoffPrice:"1299",
+        filter:"BED LINEN",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220407/50Pu/624dfc46aeb26921af1021c9/romee_multicolored_geometric_print_reversible_ac_comforter_set.jpg",
+        brandName:"ROMEE",
+        name:"Geometric Print Reversible Ac Conferter Set",
+        price:"3499",
+        strikedoffPrice:"5700",
+        filter:"BED LINEN",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220409/D4Ka/62511748aeb26921af16324f/swayam_beige%2Corange_pack_of_4_double_bedding_sets.jpg",
+        brandName:"SWAYAM",
+        name:"Pack Of 4 Double Bedding Set",
+        price:"4199",
+        strikedoffPrice:"7500",
+        filter:"BED LINEN",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220125/nyUR/61ef1158aeb2695cdd2b8f8f/divine_casa_white__solid_king_mattress_protector_bedsheet.jpg",
+        brandName:"DIVINE CASA",
+        name:"Solid King Matress Protector",
+        price:"1199",
+        strikedoffPrice:"3999",
+        filter:"BED LINEN",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20210921/GxIe/614904d8aeb269a2689a5fdc/portico_new_york_white_king_size_mattress_protector.jpg",
+        brandName:"PORTICO NEW YORK",
+        name:"King Size Matress protector",
+        price:"2999",
+        strikedoffPrice:"3999",
+        filter:"BED LINEN",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220303/Zanr/6220dc3daeb26921afc62d9b/portico_black_%26_white_striped_print_cotton_double_comforter.jpg",
+        brandName:"PORTICO",
+        name:"Strip Print Cotton Double Comferter",
+        price:"3499",
+        strikedoffPrice:"5500",
+        filter:"BED LINEN",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220419/3Vv2/625e5c56f997dd03e26823f8/divine_casa_blue_set_of_2_typographic_print_microfiber_single_reversible_comforters.jpg",
+        brandName:"DIVINE CASA",
+        name:"Pack Of Two Single Microfiber Conferter",
+        price:"1999",
+        strikedoffPrice:"3500",
+        filter:"BED LINEN",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220520/xtBg/6286f636aeb26921afae6ae3/portico_blue_striped_double_size_comforter.jpg",
+        brandName:"PORTICO",
+        name:"Striped Double Size Comferter",
+        price:"4599",
+        strikedoffPrice:"7500",
+        filter:"BED LINEN",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20210825/axLJ/61253b2f7cdb8cb824049c8d/portico_new_york_cream_%26_red_120_gsm_printed_single_size_reversible_comforter.jpg",
+        brandName:"PORTICO NEW YORK",
+        name:"Single Size Reversible Conferter",
+        price:"1350",
+        strikedoffPrice:"1999",
+        filter:"BED LINEN",
+      },
+      {
+        image_url:
+        "",
+        brandName:"",
+        name:"",
+        price:"",
+        strikedoffPrice:"",
+        filter:"BED LINEN",
+      },
+      {
+        image_url:
+        "",
+        brandName:"",
+        name:"",
+        price:"",
+        strikedoffPrice:"",
+        filter:"BED LINEN",
+      },
+      
+    ];
+
+    homedata.map(function(elem,index){
+    var div = document.createElement("div");
+   var img = document.createElement("img");
+   img.setAttribute("src",elem.image_url);
+   img.setAttribute("alt",elem.name);
+   var h3=document.createElement("h3");
+   h3.innerText=elem.brandName;
+   var h5=document.createElement("h5");
+   h5.innerText=elem.name;
+   var divv = document.createElement("div");
+   var prize = document.createElement("p");
+   prize.innerText = elem.price;
+   var strikedprize = document.createElement("p");
+   strikedprize.innerText = elem.strikedoffPrice;
+   divv.append(prize,strikedprize);
+   var btn = document.createElement("button");
+   btn.innerText = "Add to Cart";
+   btn.addEventListener("click",function(){
+  addToCart(elem);
+    })
+   div.append(img,h3,h5,divv,btn);
+   document.querySelector("#container").append(div);
+  
+  });
+  var kart = JSON.parse(localStorage.getItem("homeKart")) || [];
+  
+  function addToCart(elem){
+   kart.push(elem);
+   localStorage.setItem("homeKart",JSON.stringify(kart));
+  } 
+
+</script>
