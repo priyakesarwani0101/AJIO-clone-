@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="icon"
+    href="https://is2-ssl.mzstatic.com/image/thumb/Purple116/v4/ec/95/cf/ec95cf46-eafc-e543-a9a2-98cbfe48bccb/AppIcon-0-0-1x_U007emarketing-0-0-0-9-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1024x1024bb.png"
+    type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/f214957bb7.js" crossorigin="anonymous"></script>
+
+<style>
+   
+.reliance_img {
+        width: 80%;
+        /* border:1px solid red; */
+        margin: auto;
+    }
+.reliance_img img {
+        width: 100%;
+    }
+
+#product_main_container {
+    /* border: 1px solid blue; */
+    /* height: 300px; */
+    display:flex;
+    width:80%;
+    margin: auto;
+    }
+.detail_left {
+    /* border: 1px solid red; */
+    width: 100%;
+    }
+.detail_left img{
+    width:26%;
+    /* border: 1px solid red; */
+}
+h4 {
+text-align: center;
+margin-top:-4%;
+color:#5a5a55;
+margin-left: 20%;
+}
+h3 {
+    margin-top:2%;
+}
+.detail_left div {
+    border: 1px solid rgb(211, 153, 153);
+    width: 50%;
+    justify-content: space-around;
+    text-align:right;
+    height:20px;
+    margin-top: -4%;
+    font-size:18px;
+}
+
+.product_right_container {
+    /* border: 1px solid rgb(110, 110, 6); */
+    width:30%;
+    margin-left:20%;
+    }    
+.orderdetails {
+        font-size:23px;
+        font-weight:bold;
+    }
+#bag {
+    display: flex;
+    justify-content:space-between;
+}
+.bag_total {
+    color: rgb(88, 84, 84);
+    font-size:20px;
+}
+.bag_total_price {
+    font-size:20px;
+    margin-top: -5%;
+}
+.deliv {
+    color: rgb(88, 84, 84);
+    font-size:20px;
+    margin-top: -2%;
+}
+.total {
+    font-size:20px;
+    margin-top: 6%;
+}
+.totalamount {
+    font-size:20px;
+}
+
+.shipping_btn {
+    width:100%;
+    height:50px;
+    margin: auto;
+    background-color: #D5A249;
+    border: 1px solid #D5A249;
+    color:white;
+    letter-spacing:2px;
+    cursor: pointer;
+}
+.shipping_btn:hover{
+  outline: 1px solid;
+  border: 3px solid #5a5a55;
+  transition: all 0.3s ease-in-out;
+}
+
+.bottom_icons {
+    display: flex;
+    width: 70%;
+    margin-top: 1%;
+    margin-left: 23%;
+    /* border: 3px solid #5a5a55; */
+}
+.exchange_icons {
+    /* border:1px solid red; */
+    width: 100%;
+    margin: auto;
+}
+.exchange_icons img {
+    width:20%;
+}
+
+
+/* NAVBAR design */
+
+#navbar{
+        height:72px;
+        width:100%;
+        border-top: 3px solid rgb(47,66,84);
+        display: flex;
+        /* justify-content: space-around; */
+
+    }
+    #navbar-left{
+        height:65px;
+        width:25%;
+        border:1px solid transparent;
+        margin-left: 80px;
+
+    }
+    #navbar-right{
+        height:100%;
+        width:60%;
+        border:1px solid transparent;
+        margin-right: 50px;
+        margin-left: 50px;
+        
+
+    }
+    #right-upper{
+        height:50% ;
+        width:100%;
+        border:1px solid transparent;
+        display:flex;
+        justify-content: right;
+        gap:22px;
+        align-items: center;
+    }
+    #right-upper:hover{
+        cursor: pointer;
+    }
+    #right-lower{
+        height:50% ;
+        width:100%;
+        border:1px solid transparent;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: sans-serif;
+        font-size: 14px;
+        color:rgb(106,106,106);
+        margin-top: 3px;
+    }
+    #rl:hover{
+        font-weight: bold;
+        cursor: pointer;
+    }
+    #site-logo{
+        height:100%;
+        width:35%;
+        margin-left: 60px;
+    }
+    #navbar-button{
+        height:100%;
+        background-color: black;
+        color:white;
+        font-size: 12px;
+        font-family: sans-serif;
+        margin-right: 30px;
+        cursor: pointer;
+       
+    }
+    #navbar-input{
+        border-radius: 15px;
+        width: 250px;
+        height:25px;
+
+    }
+    #ru{
+        font-size: 12px;
+        color:rgb(106,106,106);
+        text-decoration: none;
+        font-family: sans-serif;
+    }
+    #navbar-image{
+        height:100px;
+        width:100%;
+        border:1px solid transparent;
+        margin-top: 10px;
+        
+    }
+    #navbar-img{
+        height:100%;
+        width:100%;
+    }
+    #bar-img{
+        height:100%;
+        width:4%;
+        cursor: pointer;
+        background-color: rgb(47,66,84);
+        color: white;
+    }
+
+
+
+    /* FOOTER Design */
+.footer {
+    text-transform: uppercase;
+    background-color: rgb(44, 65, 82);
+    box-sizing: border-box;
+    padding: 70px 70px;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    border-top: gray;
+    text-align: justify;
+    margin-top: 5%;
+    
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 20%;
+    padding: 0 30px;
+}
+
+.footer-col h4 {
+    font-size: 13px;
+    color: rgb(255,255,255);
+    margin-bottom: 35px;
+    font-weight: bolder;
+    position: relative;
+    margin-left: 38px;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.footer-col ul li a {
+    font-size: 11px;
+    text-decoration: none;
+    font-weight: 300;
+    color: rgb(255,255,255);
+    display: block;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    padding-left: 8px;
+}
+
+.social-links a {
+    margin-left: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    line-height: 40px;
+    border-radius: 15%;
+    color: #222;
+    transition: all 0.5s ease;
+
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+#first-right {
+    height: 100%;
+    width: 25%;
+    /* font-size: 11px; */
+    color: rgb(104, 101, 101);
+}
+
+.right {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    text-align: left;
+}
+
+.right>p {
+    font-family: HCoGothamSSmLight, Arial, Sans-Serif;
+    font-size: 1rem;
+    font-weight: 600;
+    border-left: 1px solid gray;
+    padding-left: 10px;
+    color: gray;
+}
+
+#bottom-footer{
+    height: 140px;
+    width: 100%;
+    background-color: rgb(44, 65, 82);
+    justify-content: space-between;
+    display: flex;
+    
+}
+#main{
+    /* font-size: 14px; */
+
+    width: 40%;
+    margin-left: 110px;
+    margin-top: 30px;
+    color: rgb(255,255,255);
+    
+}
+
+#btm-left{
+    font-size: 14px;
+    margin: auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+}
+#btm-right{
+    margin-top: 32px;
+    color: rgb(255,255,255);
+    margin-right: 110px;
+}
+#f-btns{
+    display: grid;
+    text-align: center;
+   margin-top: 18px;
+    height: 110px;
+    width: 55px;
+    margin-right: 45px;
+    grid-gap: 5px;
+
+}
+#foot-btn{
+  
+    background-color: #ffffff;
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#foot-btn1{
+    background-color: #ffffff;
+    font-size: 35px;
+    height: 44px;
+    width: 44px;
+    border-radius: 50px;
+    cursor: pointer;
+    
+}
+.product_left_container
+{
+    height: 450px;
+    overflow-y: scroll;
+}
+
+
+</style>    
+
+
+</head>
+<body>
+
+    <!-- NAVBAR content -->
+
+<div id="navbar">
+    <div id="navbar-left">
+        <img id="site-logo" src="https://assets.ajio.com/static/img/Ajio-Logo.svg" alt="">
+    </div>
+    <div id="navbar-right">
+        <div id="right-upper">
+            <a href=""><p id="ru">Sign In / Join AJIO</p></a>
+            <a href=""><p id="ru">Customer Care</p></a>
+            <button id="navbar-button">Visit AJIOLUXE</button>
+        </div>
+        <div id="right-lower">
+            <p id="rl">MEN</p>
+            <p id="rl">WOMEN</p>
+            <p id="rl">KIDS</p>
+            <p id="rl">INDIE</p>
+            <p id="rl">HOME AND KITCHEN</p>
+            <input id="navbar-input" type="text" placeholder="Search AJIO">
+            <img id="bar-img" src="https://i.pinimg.com/originals/fc/fa/0c/fcfa0c367d786deeaf42dec2fda70e47.png" alt="">
+            <img id="bar-img"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjHuCTCHiz7-sR9YwmlVHDZ0UXU-tcjDRIzmGlub9of64k0gsAJXe29kR-9Bpfj1f_YAg&usqp=CAU" alt="">
+        </div>
+    </div>
+  </div>
+  <div id="navbar-image">
+    <img id="navbar-img" src="https://assets.ajio.com/medias/sys_master/images/images/hd3/h34/47497754640414/16022022-D-Unisex-topstrip.jpg" alt="">
+  </div>
+
+
+
+
+    <!-- <div class="reliance_img"><img src="https://assets.ajio.com/medias/sys_master/images/images/h3c/h94/46844004237342/17082021-M-cartpagebanner-relianceone.jpg"></div> -->
+    <h2>My Bag</h2>
+
+
+<div id="product_main_container">
+ 
+    <div class="product_left_container">
+
+       <div class="detail_left">
+          <!-- <div class="product_image"></div>
+          <div class="brand"></div> 
+          <div class="product"></div> 
+          <div class="price"></div> -->
+       </div>
+
+    </div>
+
+
+    <div class="product_right_container">
+
+        <div class="orderdetails">Order Details</div><br>
+
+        <div id="bag">
+            <div class="bag_total">Bag Total</div>
+            <div class="bag_total_price"></div>
+        </div><br>
+
+        <div id="bag">
+            <div class="deliv">Delivery</div>
+            <div>FREE</div>
+        </div><br>
+        
+        <div id="bag">
+            <div class="total">Total Amount</div>
+            <div class="totalamount"></div>
+        </div><br>
+
+        <a href="./address.html"><button class="shipping_btn">PROCEED TO SHIPPING</button></a>
+
+    </div>
+
+</div> <br> <br><br>
+<hr class="hr">
+
+
+<div class="bottom_icons">
+    <div class="exchange_icons">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOSleffsgSsashwROvgH26qoTpSqlQBMe0Shd5emGuHC7qRZTl" alt=""><br><br>
+        <div>EASY EXCHANGE</div>
+    </div>
+
+    <div class="exchange_icons">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStPsdLlQq9T_-o_ndL1lc66uwb0rnsXF7tdft3ExBdkJik6LAa" alt=""><br><br>
+        <div>100% HANDPICKED</div>
+    </div>
+
+    <div class="exchange_icons">
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScEyVI4gDhOVv62XgCYGYnZImfcezYA1huL35dY6yZARjpV6-2" alt=""><br><br>
+        <div>ASSURED QUALITY</div>
+    </div>
+
+</div>
+<hr>
+
+
+
+ <!-- FOOTER CONTENT -->
+ <footer class="footer">
+    <div class="row">
+        <div class="footer-col">
+            <h4>Ajio</h4>
+            <ul>
+                <li><a href="#">Who We Are</a></li>
+                <li><a href="#">Join Our Team</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">We Respect Your Privacy</a></li>
+                <li><a href="#">Fees & Payments</a></li>
+                <li><a href="#">Returns & Refunds Policy</a></li>
+                <li><a href="#">Promotions Terms & Conditions</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>HELP</h4>
+            <ul>
+                <li><a href="#">Track Your Order</a></li>
+                <li><a href="#">Frequently Asked Questions</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Cancellations</a></li>
+                <li><a href="#">Payments</a></li>
+                <li><a href="#">Customer Care</a></li>
+                <li><a href="#">How Do I Redeem My Coupon</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Shop by</h4>
+            <ul>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Indie</a></li>
+                <li><a href="#">Stores</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Brand Directory</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Collections</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Follow us</h4>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram=AJIOlife</a></li>
+                <li><a href="#">Instagram=AJIO LUXE</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Pinterest</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<!-- <hr /> -->
+
+<div id="bottom-footer">
+
+    <div id="main">
+        <div>
+            <p>Payment Methods</p>
+        </div>
+        <div id="btm-left">
+            <p>Net Banking</p>
+            <p>Verified By Visa</p>
+            <p>Naster Card</p>
+            <p>CASH ON DELIVERY</p>
+            <p>Jio Money</p>
+        </div>
+    </div>
+    <div id="btm-right">
+        <p>Secure systems</p>
+        <p>256 BIT</p>
+    </div>
+
+    <div id="f-btns">
+        <button id="foot-btn">></button>
+        <button id="foot-btn1">...</button>
+        
+    </div>
+
+</body>
+</html>
+
+
+<script>
+
+var finalcart = JSON.parse(localStorage.getItem("Allcartproduct"));
+
+finalcart.map(function (item) {
+
+    var product_main_container = document.createElement("div");
+
+    var product_left_container = document.createElement("div");
+
+    var detail_left = document.createElement("div");
+
+    var product_image = document.createElement("img");
+    product_image.setAttribute("src",item.imageURL);
+
+    var price1 = document.createElement("h3");
+    price1.textContent = "Rs." + " " + item.price;
+
+    var product1 = document.createElement("h4");
+    product1.textContent = item.product;
+
+
+    document.querySelector(".detail_left").append(product_image, product1, price1);
+    document.querySelector(".product_left_container").append(detail_left);
+    document.querySelector("#product_main_container").append(product_left_container);
+
+})
+
+
+
+var finalprice = finalcart.reduce(function(acc, cv) {
+    var x = Number(cv.price);
+    return acc+x;
+}, 0);
+
+
+var bagtotal = document.createElement("p");
+bagtotal.textContent = "₹" + finalprice;
+
+var totalamount = document.createElement("p");
+totalamount.textContent = "₹" + finalprice;
+
+document.querySelector(".bag_total_price").append(bagtotal);
+document.querySelector(".totalamount").append(totalamount);
+
+
+</script>
