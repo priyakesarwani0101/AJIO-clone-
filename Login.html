@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trail login</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #viz {
+            display: inline;
+
+            align-items: left;
+        }
+
+section{
+    width: 35%;
+    margin: auto;
+}
+
+.box{
+    padding: 5px 25px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 25px;
+    background-color: #fff;
+    border: 1px solid red;
+}
+
+.box h1{
+    text-align: center;
+    font-size: 30px;
+    margin: 15px 0;
+    background-color: #fff;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #b1acac;
+    font-size: 15px;
+    background-color: wheat;
+}
+
+label{
+    margin: 20px 0 5px 0;
+    font-size: 20px;
+    background-color: #fff;
+}
+form p{
+    text-align: center;
+    font-size: small;
+    margin: 20px 0;
+    background-color: #fff;
+}
+.box>p{
+    text-align: center;
+    font-size: 18px;
+    margin: 20px 0;
+    background-color: #fff;
+}
+
+a, span{
+    text-decoration: none;
+    color: blue;
+    background-color: #fff;
+}
+
+input[type="submit"]:hover{
+    background-color: orange;
+    color: black;
+}
+
+.viz {
+    height: 0;
+    width: 0;
+    border: 0;
+    margin: 0px 32px 0 0;
+    align-self: end;
+    z-index: 1;
+    background-color: #fff;
+}
+
+#icon {
+    width: 25px;
+    z-index: 2;
+    padding: 7px 0 0 0px;
+    background-color: rgba(255, 255, 255, 0);
+}
+#navbar{
+            height:72px;
+            width:100%;
+            border-top: 3px solid rgb(47,66,84);
+            display: flex;
+            /* justify-content: space-around; */
+            margin-bottom: 40px;
+    
+        }
+        #navbar-left{
+            height:65px;
+            width:25%;
+            border:1px solid transparent;
+            margin-left: 80px;
+    
+        }
+        #navbar-right{
+            height:100%;
+            width:60%;
+            border:1px solid transparent;
+            margin-right: 50px;
+            margin-left: 50px;
+            
+    
+        }
+        #right-upper{
+            height:50% ;
+            width:100%;
+            border:1px solid transparent;
+            display:flex;
+            justify-content: right;
+            gap:22px;
+            align-items: center;
+        }
+        #right-upper:hover{
+            cursor: pointer;
+        }
+        #right-lower{
+            height:50% ;
+            width:100%;
+            border:1px solid transparent;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: sans-serif;
+            font-size: 14px;
+            color:rgb(106,106,106);
+            margin-top: 3px;
+        }
+        #rl:hover{
+            font-weight: bold;
+            cursor: pointer;
+        }
+        #site-logo{
+            height:100%;
+            width:35%;
+            margin-left: 60px;
+        }
+        #navbar-button{
+            height:100%;
+            background-color: black;
+            color:white;
+            font-size: 12px;
+            font-family: sans-serif;
+            margin-right: 30px;
+            cursor: pointer;
+           
+        }
+        #navbar-input{
+            border-radius: 15px;
+            width: 250px;
+            height:25px;
+    
+        }
+        #ru{
+            font-size: 12px;
+            color:rgb(106,106,106);
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+        #navbar-image{
+            height:100px;
+            width:100%;
+            border:1px solid transparent;
+            margin-top: 10px;
+            
+        }
+        #navbar-img{
+            height:100%;
+            width:100%;
+        }
+        #bar-img{
+            height:100%;
+            width:4%;
+            cursor: pointer;
+            background-color: rgb(47,66,84);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="navbar-left">
+            <img id="site-logo" src="https://assets.ajio.com/static/img/Ajio-Logo.svg" alt="">
+        </div>
+        <div id="navbar-right">
+            <div id="right-upper">
+                <a href=""><p id="ru">Sign In / Join AJIO</p></a>
+                <a href=""><p id="ru">Customer Care</p></a>
+                <button id="navbar-button">Visit AJIOLUXE</button>
+            </div>
+            <div id="right-lower">
+                <p id="rl">MEN</p>
+                <p id="rl">WOMEN</p>
+                <p id="rl">KIDS</p>
+                <p id="rl">INDIE</p>
+                <p id="rl">HOME AND KITCHEN</p>
+                <input id="navbar-input" type="text" placeholder="Search AJIO">
+                <img id="bar-img" src="https://i.pinimg.com/originals/fc/fa/0c/fcfa0c367d786deeaf42dec2fda70e47.png" alt="">
+                <img id="bar-img"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjHuCTCHiz7-sR9YwmlVHDZ0UXU-tcjDRIzmGlub9of64k0gsAJXe29kR-9Bpfj1f_YAg&usqp=CAU" alt="">
+            </div>
+        </div>
+        </div>
+    <section>
+        <div class="box">
+            <h1>Sign In</h1>
+            <form action="">
+                <label for="">Email</label>
+                <input type="email" placeholder="Enter email" id="logEmail" value="">
+
+                <label for="">Password</label>
+                <div class="viz"> <img src="eye-solid.svg" onclick="seePass()" id="icon" alt=""></div>
+                <input type="password" placeholder="Enter password" id="logPass" value="">
+
+                <p></p>
+
+                <input id="signup" type="submit" value="SIGN UP" />
+            </form>
+            <p>Don't have an account? <a href="http://127.0.0.1:5500/AJIO-clone-/Signup.html"> Sign Up</a> </p>
+        </div>
+
+    </section>
+
+</body>
+
+
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit", findUserData);
+
+function findUserData(event) {
+  event.preventDefault();
+  let userEmail = document.getElementById("logEmail").value;
+  let userPass = document.getElementById("logPass").value;
+  
+  var users = JSON.parse(localStorage.getItem("SignupData"));
+  
+  var filterUser = users.filter(function (ele) {
+    return ele.email === userEmail && ele.password === userPass;
+  });
+
+  if (filterUser.length == 1) {
+    alert("login successful");
+  } else {
+    alert("wrong credentials");
+  }
+
+  logEmail.value = "";
+  logPass.value = "";
+}
+
+function seePass() {
+  var viz = document.getElementById("logPass");
+  var img = document.getElementById("icon");
+  if (viz.type === "password") {
+    viz.type = "text";
+    img.src = "eye-solid.svg";
+  } else {
+    viz.type = "password";
+    img.src = "eye-slash-solid.svg";
+  }
+}
+</script>
