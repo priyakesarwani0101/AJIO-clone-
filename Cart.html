@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart page</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Lora', serif;
+        }
+        
+        .navbar{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 15% 12% 40% 10% 15%;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 20px;
+            position:fixed;
+            background-color: white;
+        }
+        #dantera>img{
+            margin-top:100px;
+            width: 70%;
+            margin-left: 15%;
+            height: 200px
+        }
+        #cart{
+            width: 50%;
+            margin-left: 13%;
+            height: 50px;
+        }
+        #prod {
+            max-height: 400px;
+            overflow-y:scroll;
+        }
+        .mdiv{
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: 20% 30% 3% 5% 3% 5% 34%;
+            
+        }
+        .mdiv > img{
+            width: 80%;
+        }
+        #mybag{
+            width: 70%;
+            margin-top: 2%;
+            margin-left: 15%;
+            text-align: center;
+        }
+        #quan,#qu{
+            color: silver;
+        }
+        #prodName{
+            font-family: lora;
+            font-size: 15px;
+            font-weight: 450;
+            padding-top: 15px;
+        }
+        #main{
+            width: 70%;
+            margin-left: 15%;
+            margin-top:2%;
+            display: grid;
+            grid-template-columns:69% 31%;
+            grid-gap: 1%;
+            padding:1% 1% 1% 0;
+        }
+        #bill{
+            background-color: #fafafa;
+            padding: 1.5%;
+            font-weight: 500;
+        }
+        #btn{
+            background-color: #D5a249;
+            padding: 15px 97px 15px 97px;
+            border: none;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        #btn:hover{
+            background-color:  #D5a249;
+           border: 1px solid black;
+        }
+        #quantitySel{
+            margin-left: 10px;
+            margin-top: 10px;
+            height:25px;
+            width: 30px;
+            border: none;
+            background-color: white;
+        }
+        #sizeSel{
+            margin-top: 10px;
+            height: 25px;
+            width: 40px;
+            margin-left: 12px;
+            border: none;
+            background-color: white;
+        }
+        .labelClass{
+             margin-top: 10px;
+             margin-left: 7px;
+             font-weight: 600;
+             color: #999999;
+        }
+        .label2Class{
+            color: #999999;
+            margin-top: 10px;
+            margin-left: 2px;
+            font-weight: 600;
+        }
+        .priceDiv{
+            margin-top: 10px;
+            margin-left: 20px;
+            font-weight: 500;
+            
+        }
+        .saving {
+            padding: 10px 0px;
+            padding-left: 22px;
+            font-size: 15px;
+        }
+        .dis{
+            text-decoration: line-through;
+            color: #D5a249;
+            font-size: 15px;
+        }
+        .discount {
+            margin-left: 20px;
+            margin-top: 3px;
+            text-decoration: line-through;
+            color: #D5a249;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+        .finalPrice {
+            margin-left: 20px;
+            padding:0 10px;
+            background-color:#e1ecf1;
+        }
+        #det1{
+            padding-left: 200px;
+        }
+        #det2{
+            padding-left: 170px;
+            color:#D5a249;
+        }
+        #det3{
+            padding-left: 205px;
+            color:#D5a249;
+        }
+        #det4{
+            padding-left: 160px;
+        }
+    </style>
+</head>
+    <div class="navbar">
+        <div>
+            
+        </div>
+        <p><a href="home.html"><img src="https://assets.ajio.com/static/img/Ajio-Logo.svg" alt="logo" width="80%"></p>
+        <div id="nav">
+            <img src="https://github.com/impcakash/Project_AJIO/blob/raman-branch/cart-1.png?raw=true" id="cart" alt="">
+        </div>
+        <p><a href="login.html">Login/Join Ajio</p>
+    </div>
+    <div id="dantera">
+        <img src="https://assets.ajio.com/medias/sys_master/images/i…ges/hfa/hc7/45119956189214/Dhanteras-offer-81.jpg" alt="">
+    </div>
+    <h2 id="mybag">My Bag &nbsp;<span id="quan"></span>&nbsp;<span id="qu">items)</span></h2>
+    <div id="main">
+    <div id="prod">
+    </div>
+    <div id="bill">
+        <h4>Order Details</h4>
+        <br><br><p>Bag Total <span id="det1">1</span></p> 
+        <br><p>Bag Discount <span id="det2">1</span></p>
+        <br><p>Delivery <span id="det3">1</span></p>
+        <br><br><h4>Total Amount <span id="det4">1</span></h4>
+        <br><p><a href="address.html"> <button style="background-color: rgb(255, 102, 0);">Proceed to payment</button></p>
+    </div>
+
+    </div>
+    
+</body>
+</html>
+<script>
+    let count=0;
+    let data =[
+        {
+            img :"https://assets.ajio.com/medias/sys_master/root/20210316/NBpk/604fb67baeb26969818651ea/-473Wx593H-441115903-indigo-MODEL.jpg",
+            name : "AVAASA MIX 'N' MATCH Embroidered blue kurthi for women",
+            price : 105,
+            dis : "Rs.1049",
+            per : "10%",
+            finalPrice :1044
+        },
+        {
+            img : 'https://assets.ajio.com/medias/sys_master/root/hb2/h7c/11749319180318/-1117Wx1400H-460229269-khaki-MODEL.jpg',
+            name :"FORT COLLINS Hooded Panelled Bomber Jacket",
+            price : 199,
+            dis : "Rs.1999",
+            per : "10%",
+            finalPrice :1799
+        },{
+            img : "https://assets.ajio.com/medias/sys_master/root/20210404/WcBL/606b27afaeb269a9e362ae4a/-1117Wx1400H-461219890-blue-MODEL.jpg",
+            name :"DEYANN Floral Pattern Suit Set with Slits",
+            price :220,
+            dis : "Rs.2199",
+            per : "10%",
+            finalPrice :1980
+        }
+    ];
+    var bagtotal=0;
+    var bagdiscount=0;
+    for(let i =0;i<data.length;i++){
+        bagtotal+=data[i].price + data[i].finalPrice;
+        bagdiscount+=data[i].price;
+    }
+    console.log('bagTotal',bagtotal);
+    console.log('bagDiscount',bagdiscount);
+
+    let bagTotal = document.getElementById('det1');
+    bagTotal.textContent=bagtotal;
+    let bagDiscount = document.getElementById('det2');
+    bagDiscount.textContent="- "+bagdiscount;
+    let delivery = document.getElementById('det3');
+    if(bagtotal-bagdiscount >1000)
+    {
+        delivery.textContent="Free";
+    }else
+    {
+        delivery.textContent=99;
+    }
+
+
+    let totalPrice = document.getElementById('det4');
+    if(document.getElementById('det3').textContent !="Free")
+    {
+        totalPrice.textContent = Number(document.getElementById('det3').textContent) + bagtotal-bagdiscount;
+    }else
+    {
+        totalPrice.textContent = bagtotal-bagdiscount;
+    }
+    let parent = document.getElementById('prod');
+    let mybag = document.getElementById('quan');
+    function showProd(data){
+        data.forEach((product)=>{
+            let mdiv = document.createElement('div');
+            mdiv.setAttribute('class','mdiv')
+            let img = document.createElement("img");
+            img.src=product.img;
+            let p = document.createElement('span');
+            p.setAttribute('id','prodName')
+            p.textContent=product.name;
+            let selectQuan = document.createElement('select');
+            selectQuan.setAttribute('id','quantitySel')
+            let label1 = document.createElement('label');
+            label1.setAttribute('class' ,'labelClass')
+            label1.textContent="Qty";
+            selectQuan.innerHTML=` <select name="" id="quantityPro"><option>1</option><option>2</option><option>3</option><option >4</option><option>5</option><option>More</option></select>`;
+            let selectSize = document.createElement('select')
+            console.log('selectQuan',selectQuan.value)
+            selectSize.setAttribute('id','sizeSel')
+            let label2 = document.createElement('label');
+            label2.setAttribute('class' ,'label2Class')
+            label2.textContent="Size"
+            selectSize.innerHTML=`<option>XS</option><option>S</option select><option>M</option><option>L</option><option>XL</option><option>XXL</option>`;
+            let pdiv = document.createElement('div');
+            pdiv.setAttribute('class','priceDiv')
+            let saving = document.createElement('span');
+            saving.setAttribute('class','saving')
+            saving.textContent='Savings : ';
+
+            let span = document.createElement('span');
+            span.textContent = "Rs."+product.price;
+            span.setAttribute('class','dis')
+            let discount = document.createElement('p');
+            discount.setAttribute('class','discount');
+            discount.textContent = product.dis+"("+product.per+")";
+            let finalPrice = document.createElement('span');
+            finalPrice.setAttribute('class','finalPrice');
+            finalPrice.textContent="Rs. "+product.finalPrice
+            pdiv.append(saving,span,discount,finalPrice);
+            mdiv.append(img,p,label1,selectQuan,label2,selectSize,pdiv);
+            parent.append(mdiv);
+            count++;
+        })
+    }
+   showProd(data);
+   console.log('count',count);
+   mybag.textContent='('+count;
+</script>
