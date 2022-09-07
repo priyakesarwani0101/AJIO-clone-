@@ -938,8 +938,6 @@ function display(data){
         });
         display(mensData);
    }
-    //  count = filter.length;
-    //  document.getElementById("count").innerText = count;
   }
    
   var cartItem = JSON.parse(localStorage.getItem("CartItems")) || [];
@@ -947,8 +945,4 @@ function display(data){
      cartItem.push(elem);
      localStorage.setItem("CartItems",JSON.stringify(cartItem));
   }
-    
-  
-   
-  
   </script>
