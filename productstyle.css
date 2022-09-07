@@ -1,0 +1,124 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* layout Styles */
+  #naz-content-container {
+    display: flex;
+    margin: 2rem 0;
+  }
+  
+  #naz-sidebar {
+    width: 20%;
+    background-color: white;
+    font-size: 1.2rem;
+  }
+  
+  #naz-product-container {
+    width: 70%;
+  }
+  
+  /* Sidebar Styles */
+  #naz-sidebar {
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 8px !important;
+  }
+  
+  /* Button Styles */
+  #filterButton {
+    margin-top: 1rem;
+    padding: 8px 60px;
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: normal;
+  }
+  
+  #filterButton:hover {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+  }
+  
+  /* Product Styles */
+  #naz-product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .naz-product {
+    margin: 1.5rem 0;
+  }
+  
+  .naz-product-brand {
+    color: rosybrown;
+    font-weight: bold;
+    text-align: center;
+    padding: 25px 0 0 0;
+  }
+  
+  .naz-product-title {
+    text-align: center;
+  }
+  
+  .naz-price-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .naz-price,
+  .naz-striked-price,
+  .naz-offer {
+    margin: 5px;
+  }
+  
+  .naz-price {
+    font-weight: bold;
+  }
+  
+  .naz-striked-price {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  .naz-offer {
+    color: rosybrown;
+  }
+  
+  .naz-product-img {
+    width: 300px;
+  }
+  
+  .naz-product-img:hover {
+    transform: scale(1.1);
+    border: 2px solid;
+    border-radius: 5px;
+  }
+  
+  /* Product Style for Smaller Screens */
+  @media only screen and (max-width: 1200px) {
+    #naz-sidebar {
+      display: none;
+    }
+    #naz-product-container {
+      justify-content: space-between;
+      margin: 0 2rem;
+    }
+    #naz-sort-products {
+      margin: 0 1rem;
+    }
+  }
+  

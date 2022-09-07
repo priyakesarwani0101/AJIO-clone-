@@ -1,0 +1,217 @@
+h2{
+    text-align: center;
+   }
+    .reliance_img {
+            width: 80%;
+            /* border:1px solid red; */
+            margin: auto;
+        }
+    .reliance_img img {
+            width: 100%;
+        }
+    
+    #product_main_container {
+        /* border: 1px solid blue; */
+        /* height: 300px; */
+        display:flex;
+        width:80%;
+        margin: auto;
+        }
+    .detail_left {
+        /* border: 1px solid red; */
+        width: 100%;
+        }
+    .detail_left img{
+        width:26%;
+        /* border: 1px solid red; */
+    }
+   h4 {
+    text-align: center;
+    margin-top:-4%;
+    color:#5a5a55;
+    margin-left: 20%;
+    }
+    h3 {
+        margin-top:2%;
+    }
+    .detail_left div {
+        border: 1px solid rgb(211, 153, 153);
+        width: 50%;
+        justify-content: space-around;
+        text-align:right;
+        height:20px;
+        margin-top: -4%;
+        font-size:18px;
+    }
+    
+    .product_right_container {
+        /* border: 1px solid rgb(110, 110, 6); */
+        width:30%;
+        margin-left:20%;
+        }    
+    .orderdetails {
+            font-size:23px;
+            font-weight:bold;
+        }
+    #bag {
+        display: flex;
+        justify-content:space-between;
+    }
+    .bag_total {
+        color: rgb(88, 84, 84);
+        font-size:20px;
+    }
+    .bag_total_price {
+        font-size:20px;
+        margin-top: -5%;
+    }
+    .deliv {
+        color: rgb(88, 84, 84);
+        font-size:20px;
+        margin-top: -2%;
+    }
+    .total {
+        font-size:20px;
+        margin-top: 6%;
+    }
+    .totalamount {
+        font-size:20px;
+    }
+    
+    .shipping_btn {
+        width:100%;
+        height:50px;
+        margin: auto;
+        background-color: #D5A249;
+        border: 1px solid #D5A249;
+        color:white;
+        letter-spacing:2px;
+        cursor: pointer;
+    }
+    .shipping_btn:hover{
+      outline: 1px solid;
+      border: 3px solid #5a5a55;
+      transition: all 0.3s ease-in-out;
+    }
+    
+    .bottom_icons {
+        display: flex;
+        width: 70%;
+        margin-top: 1%;
+        margin-left: 23%;
+        /* border: 3px solid #5a5a55; */
+    }
+    .exchange_icons {
+        /* border:1px solid red; */
+        width: 100%;
+        margin: auto;
+    }
+    .exchange_icons img {
+        width:20%;
+    }
+    
+    
+    /* NAVBAR design */
+    
+    #navbar{
+            height:72px;
+            width:100%;
+            border-top: 3px solid rgb(47,66,84);
+            display: flex;
+            /* justify-content: space-around; */
+    
+        }
+        #navbar-left{
+            height:65px;
+            width:25%;
+            border:1px solid transparent;
+            margin-left: 80px;
+    
+        }
+        #navbar-right{
+            height:100%;
+            width:60%;
+            border:1px solid transparent;
+            margin-right: 50px;
+            margin-left: 50px;
+            
+    
+        }
+        #right-upper{
+            height:50% ;
+            width:100%;
+            border:1px solid transparent;
+            display:flex;
+            justify-content: right;
+            gap:22px;
+            align-items: center;
+        }
+        #right-upper:hover{
+            cursor: pointer;
+        }
+        #right-lower{
+            height:50% ;
+            width:100%;
+            border:1px solid transparent;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: sans-serif;
+            font-size: 14px;
+            color:rgb(106,106,106);
+            margin-top: 3px;
+        }
+        #rl:hover{
+            font-weight: bold;
+            cursor: pointer;
+        }
+        #site-logo{
+            height:100%;
+            width:35%;
+            margin-left: 60px;
+        }
+        #navbar-button{
+            height:100%;
+            background-color: black;
+            color:white;
+            font-size: 12px;
+            font-family: sans-serif;
+            margin-right: 30px;
+            cursor: pointer;
+           
+        }
+        #navbar-input{
+            border-radius: 15px;
+            width: 250px;
+            height:25px;
+    
+        }
+        #ru{
+            font-size: 12px;
+            color:rgb(106,106,106);
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+        #navbar-image{
+            height:100px;
+            width:100%;
+            border:1px solid transparent;
+            margin-top: 10px;
+            
+        }
+        #navbar-img{
+            height:100%;
+            width:100%;
+        }
+        #bar-img{
+            height:100%;
+            width:4%;
+            cursor: pointer;
+            background-color: rgb(47,66,84);
+            color: white;
+        }
+    
+    
+    
+        
+    
