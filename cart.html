@@ -5,388 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart page</title>
-    <style>
-       h2{
-        text-align: center;
-       }
-        .reliance_img {
-                width: 80%;
-                /* border:1px solid red; */
-                margin: auto;
-            }
-        .reliance_img img {
-                width: 100%;
-            }
-        
-        #product_main_container {
-            /* border: 1px solid blue; */
-            /* height: 300px; */
-            display:flex;
-            width:80%;
-            margin: auto;
-            }
-        .detail_left {
-            /* border: 1px solid red; */
-            width: 100%;
-            }
-        .detail_left img{
-            width:26%;
-            /* border: 1px solid red; */
-        }
-       h4 {
-        text-align: center;
-        margin-top:-4%;
-        color:#5a5a55;
-        margin-left: 20%;
-        }
-        h3 {
-            margin-top:2%;
-        }
-        .detail_left div {
-            border: 1px solid rgb(211, 153, 153);
-            width: 50%;
-            justify-content: space-around;
-            text-align:right;
-            height:20px;
-            margin-top: -4%;
-            font-size:18px;
-        }
-        
-        .product_right_container {
-            /* border: 1px solid rgb(110, 110, 6); */
-            width:30%;
-            margin-left:20%;
-            }    
-        .orderdetails {
-                font-size:23px;
-                font-weight:bold;
-            }
-        #bag {
-            display: flex;
-            justify-content:space-between;
-        }
-        .bag_total {
-            color: rgb(88, 84, 84);
-            font-size:20px;
-        }
-        .bag_total_price {
-            font-size:20px;
-            margin-top: -5%;
-        }
-        .deliv {
-            color: rgb(88, 84, 84);
-            font-size:20px;
-            margin-top: -2%;
-        }
-        .total {
-            font-size:20px;
-            margin-top: 6%;
-        }
-        .totalamount {
-            font-size:20px;
-        }
-        
-        .shipping_btn {
-            width:100%;
-            height:50px;
-            margin: auto;
-            background-color: #D5A249;
-            border: 1px solid #D5A249;
-            color:white;
-            letter-spacing:2px;
-            cursor: pointer;
-        }
-        .shipping_btn:hover{
-          outline: 1px solid;
-          border: 3px solid #5a5a55;
-          transition: all 0.3s ease-in-out;
-        }
-        
-        .bottom_icons {
-            display: flex;
-            width: 70%;
-            margin-top: 1%;
-            margin-left: 23%;
-            /* border: 3px solid #5a5a55; */
-        }
-        .exchange_icons {
-            /* border:1px solid red; */
-            width: 100%;
-            margin: auto;
-        }
-        .exchange_icons img {
-            width:20%;
-        }
-        
-        
-        /* NAVBAR design */
-        
-        #navbar{
-                height:72px;
-                width:100%;
-                border-top: 3px solid rgb(47,66,84);
-                display: flex;
-                /* justify-content: space-around; */
-        
-            }
-            #navbar-left{
-                height:65px;
-                width:25%;
-                border:1px solid transparent;
-                margin-left: 80px;
-        
-            }
-            #navbar-right{
-                height:100%;
-                width:60%;
-                border:1px solid transparent;
-                margin-right: 50px;
-                margin-left: 50px;
-                
-        
-            }
-            #right-upper{
-                height:50% ;
-                width:100%;
-                border:1px solid transparent;
-                display:flex;
-                justify-content: right;
-                gap:22px;
-                align-items: center;
-            }
-            #right-upper:hover{
-                cursor: pointer;
-            }
-            #right-lower{
-                height:50% ;
-                width:100%;
-                border:1px solid transparent;
-                display:flex;
-                justify-content: space-around;
-                align-items: center;
-                font-family: sans-serif;
-                font-size: 14px;
-                color:rgb(106,106,106);
-                margin-top: 3px;
-            }
-            #rl:hover{
-                font-weight: bold;
-                cursor: pointer;
-            }
-            #site-logo{
-                height:100%;
-                width:35%;
-                margin-left: 60px;
-            }
-            #navbar-button{
-                height:100%;
-                background-color: black;
-                color:white;
-                font-size: 12px;
-                font-family: sans-serif;
-                margin-right: 30px;
-                cursor: pointer;
-               
-            }
-            #navbar-input{
-                border-radius: 15px;
-                width: 250px;
-                height:25px;
-        
-            }
-            #ru{
-                font-size: 12px;
-                color:rgb(106,106,106);
-                text-decoration: none;
-                font-family: sans-serif;
-            }
-            #navbar-image{
-                height:100px;
-                width:100%;
-                border:1px solid transparent;
-                margin-top: 10px;
-                
-            }
-            #navbar-img{
-                height:100%;
-                width:100%;
-            }
-            #bar-img{
-                height:100%;
-                width:4%;
-                cursor: pointer;
-                background-color: rgb(47,66,84);
-                color: white;
-            }
-        
-        
-        
-            /* FOOTER Design */
-        .footer {
-            text-transform: uppercase;
-            background-color: rgb(44, 65, 82);
-            box-sizing: border-box;
-            padding: 70px 70px;
-            line-height: 1.5;
-            font-family: 'Poppins', sans-serif;
-            border-top: gray;
-            text-align: justify;
-            margin-top: 5%;
-            
-        }
-        
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        
-        .footer-col {
-            width: 20%;
-            padding: 0 30px;
-        }
-        
-        .footer-col h4 {
-            font-size: 13px;
-            color: rgb(255,255,255);
-            margin-bottom: 35px;
-            font-weight: bolder;
-            position: relative;
-            margin-left: 38px;
-        }
-        
-        .footer-col h4::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -10px;
-            height: 2px;
-            box-sizing: border-box;
-            width: 50px;
-        }
-        
-        ul {
-            list-style-type: none;
-        }
-        
-        .footer-col ul li a {
-            font-size: 11px;
-            text-decoration: none;
-            font-weight: 300;
-            color: rgb(255,255,255);
-            display: block;
-            margin-bottom: 15px;
-            transition: all 0.3s ease;
-        }
-        
-        .footer-col ul li a:hover {
-            padding-left: 8px;
-        }
-        
-        .social-links a {
-            margin-left: 20px;
-            background-color: rgba(255, 255, 255, 0.2);
-            line-height: 40px;
-            border-radius: 15%;
-            color: #222;
-            transition: all 0.5s ease;
-        
-        }
-        
-        .social-links {
-            display: flex;
-            gap: 20px;
-        }
-        
-        #first-right {
-            height: 100%;
-            width: 25%;
-            /* font-size: 11px; */
-            color: rgb(104, 101, 101);
-        }
-        
-        .right {
-            display: flex;
-            justify-content: space-between;
-            margin: auto;
-            text-align: left;
-        }
-        
-        .right>p {
-            font-family: HCoGothamSSmLight, Arial, Sans-Serif;
-            font-size: 1rem;
-            font-weight: 600;
-            border-left: 1px solid gray;
-            padding-left: 10px;
-            color: gray;
-        }
-        
-        #bottom-footer{
-            height: 140px;
-            width: 100%;
-            background-color: rgb(44, 65, 82);
-            justify-content: space-between;
-            display: flex;
-            
-        }
-        #main{
-            /* font-size: 14px; */
-        
-            width: 40%;
-            margin-left: 110px;
-            margin-top: 30px;
-            color: rgb(255,255,255);
-            
-        }
-        
-        #btm-left{
-            font-size: 14px;
-            margin: auto;
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
-            gap: 10px;
-        }
-        #btm-right{
-            margin-top: 32px;
-            color: rgb(255,255,255);
-            margin-right: 110px;
-        }
-        #f-btns{
-            display: grid;
-            text-align: center;
-           margin-top: 18px;
-            height: 110px;
-            width: 55px;
-            margin-right: 45px;
-            grid-gap: 5px;
-        
-        }
-        #foot-btn{
-          
-            background-color: #ffffff;
-            height: 45px;
-            width: 45px;
-            border-radius: 50px;
-            cursor: pointer;
-        }
-        #foot-btn1{
-            background-color: #ffffff;
-            font-size: 35px;
-            height: 44px;
-            width: 44px;
-            border-radius: 50px;
-            cursor: pointer;
-            
-        }
-        .product_left_container
-        {
-            height: 450px;
-            overflow-y: scroll;
-        }
-        
-        
-        </style>    
-        
+    <link rel="stylesheet" href="./cart.css">    
         
 </head>
 <body>
@@ -412,6 +31,7 @@
             </div>
         </div>
         </div>
+        
         <div id="navbar-image">
             <img id="navbar-img" src="https://assets.ajio.com/medias/sys_master/images/images/hd3/h34/47497754640414/16022022-D-Unisex-topstrip.jpg" alt="">
           </div>
@@ -429,7 +49,7 @@
                     </div>
             </div>
            <div id="product_right_container">
-            <div class="orderdetails">Order Details</div><br>
+            <div class="orderdetails" style="text-align: center;">Order Details</div><br>
 
             <div id="bag">
                 <div class="bag_total">Bag Total</div>
@@ -475,15 +95,82 @@
 </body>
 </html>
 <script>
+    var Data = [
+    {
+        imageURL:
+            "https://assets.ajio.com/medias/sys_master/root/20220127/RXhg/61f2daaef997dd66234079f3/gosriki_pink_geometric_print_straight_kurta_set.jpg",
+        brand: "GOSRIKI",
+        product: "Geometric Print Straight Kurta Set",
+        gender: "female",
+        category: "kurta",
+        price: 895,
+        strikedOffPrice: 3196,
+    },
+    {
+        imageURL:
+            "https://assets.ajio.com/medias/sys_master/root/20220124/8ATC/61eeae7af997dd662337baf6/gulmohar_jaipur_yellow_floral_printed_straight_kurta_set.jpg",
+        brand: "GULMOHAR JAIPUR",
+        product: "Floral Printed Straight Kurta Set",
+        gender: "female",
+        category: "kurta",
+        price: 1199,
+        strikedOffPrice: 2499,
+    },
+    {
+        imageURL:
+            "https://assets.ajio.com/medias/sys_master/root/20220124/IYjE/61eeadd8f997dd662337b165/gulmohar_jaipur_maroon_floral_print_straight_kurta_set.jpg",
+        brand: "GULMOHAR JAIPUR",
+        product: "Floral Print Straight Kurta Set",
+        gender: "female",
+        category: "kurta",
+        price: 1199,
+        strikedOffPrice: 2499,
+    },
+    {
+        imageURL:
+            "https://assets.ajio.com/medias/sys_master/root/20211006/ntzG/615d2b66f997ddce89026c9f/ishoo_white_polka-dot_flared_kurta_set.jpg",
+        brand: "ISHOO",
+        product: "Polka-dot Flared Kurta Set",
+        gender: "female",
+        category: "kurta",
+        price: 959,
+        strikedOffPrice: 1599,
+    },
+    {
+        imageURL:
+            "https://assets.ajio.com/medias/sys_master/root/20220124/zTEx/61eeac9bf997dd6623379e6d/gulmohar_jaipur_teal_floral_print_flared_kurta_set.jpg",
+        brand: "GULMOHAR JAIPUR",
+        product: "Floral Print Flared Kurta Set",
+        gender: "female",
+        category: "kurta",
+        price: 1299,
+        strikedOffPrice: 2499,
+    },
+    {
+        imageURL:
+            "https://assets.ajio.com/medias/sys_master/root/20211125/cMM7/619fbe5aaeb2690110d8b766/gosriki_pink_floral_printed_straight_kurta_sets.jpg",
+        brand: "GOSRIKI",
+        product: "Floral Printed Straight Kurta Sets",
+        gender: "female",
+        category: "kurta",
+        price: 895,
+        strikedOffPrice: 3401,
+    }
+]
+    localStorage.setItem("CartItems",JSON.stringify(Data));
+
     var cart = JSON.parse(localStorage.getItem("CartItems")) || [];
+
     displayCart(cart);
+    event.preventDefault();
     
     function displayCart(cart){
         cart.map(function(el,index){
         var image = document.createElement("img");
-        image.setAttribute("src",el.image);
+        image.setAttribute("src",el.imageURL);
+        image.setAttribute("alt",el.product)
         var h5 = document.createElement("h5");
-        h5.innerText = el.name;
+        h5.innerText = el.product;
         var price = document.createElement("p");
         price.innerText = el.price;
         var remove = document.createElement("button");

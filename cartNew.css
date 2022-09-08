@@ -1,0 +1,140 @@
+ /*--------- navbar styling--------- */
+#navbar{
+    height:auto;
+    width:100%;
+    border-top: 3px solid rgb(47,66,84);
+    display: flex;
+    border-bottom: 2px solid rgb(59, 3, 3);
+    /* justify-content: space-around; */
+
+}
+#navbar-left{
+    height:65px;
+    width:25%;
+    border:1px solid transparent;
+    margin-left: 80px;
+
+}
+#navbar-right{
+    height:100%;
+    width:60%;
+    border:1px solid transparent;
+    margin-right: 50px;
+    margin-left: 50px;
+    
+
+}
+#right-upper{
+    height:50% ;
+    width:100%;
+    border:1px solid transparent;
+    display:flex;
+    justify-content: right;
+    gap:22px;
+    align-items: center;
+}
+#right-upper:hover{
+    cursor: pointer;
+}
+#right-lower{
+    height:50% ;
+    width:100%;
+    border:1px solid transparent;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 14px;
+    color:rgb(106,106,106);
+    margin-top: 3px;
+}
+#rl:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+#site-logo{
+    height:100%;
+    width:35%;
+    margin-left: 60px;
+}
+#navbar-button{
+    height:100%;
+    background-color: black;
+    color:white;
+    font-size: 12px;
+    font-family: sans-serif;
+    margin-right: 30px;
+    cursor: pointer;
+   
+}
+#navbar-input{
+    border-radius: 15px;
+    width: 250px;
+    height:25px;
+
+}
+#ru{
+    font-size: 12px;
+    color:rgb(106,106,106);
+    text-decoration: none;
+    font-family: sans-serif;
+}
+#navbar-image{
+    height:100px;
+    width:100%;
+    border:1px solid transparent;
+    margin-top: 10px;
+    
+}
+#navbar-img{
+    height:100%;
+    width:100%;
+}
+#bar-img{
+    height:100%;
+    width:4%;
+    cursor: pointer;
+    background-color: rgb(47,66,84);
+    color: white;
+}
+
+#navbar-image{
+    /* height:100px; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:90%;
+    border:1px solid transparent;
+    margin-top: -0px; 
+}
+  
+ /* --------cart styling-------- */
+ #Cart{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid green;
+    justify-content: space-around;
+ }
+ #left-Cart{
+    width: 65%;
+    height: 100%;
+ }
+ #left-Cart img{
+    height: 90px;
+ }
+ /* #left-Cart > div{
+    display: flex;
+ } */
+ #right-Cart{
+    width: 30%;
+ }
+ #Cart > div{
+    border: 1px solid red;
+ }
+ .divContainer{
+    display: flex;
+ }
+ .product data {
+    display: flex;
+ }
+ 

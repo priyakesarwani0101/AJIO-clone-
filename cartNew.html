@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> New Cart Page</title>
+    <link rel="stylesheet" href="./cartNew.css">
+</head>
+<body>
+   <!-- Navbar section -->
+   <div id="navbar">
+    <div id="navbar-left">
+        <img id="site-logo" src="https://assets.ajio.com/static/img/Ajio-Logo.svg" alt="">
+    </div>
+    <div id="navbar-right">
+        <div id="right-upper">
+            <a href=""><p id="ru">Sign In / Join AJIO</p></a>
+            <a href=""><p id="ru">Customer Care</p></a>
+            <button id="navbar-button">Visit AJIOLUXE</button>
+        </div>
+        <div id="right-lower">
+            <p id="rl">MEN</p>
+            <p id="rl">WOMEN</p>
+            <p id="rl">KIDS</p>
+            <p id="rl">INDIE</p>
+            <p id="rl">HOME AND KITCHEN</p>
+            <input id="navbar-input" type="text" placeholder="Search AJIO">
+            <img id="bar-img" src="https://i.pinimg.com/originals/fc/fa/0c/fcfa0c367d786deeaf42dec2fda70e47.png" alt="">
+            <img id="bar-img"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjHuCTCHiz7-sR9YwmlVHDZ0UXU-tcjDRIzmGlub9of64k0gsAJXe29kR-9Bpfj1f_YAg&usqp=CAU" alt="">
+        </div>
+    </div>
+    </div>
+
+    <div id="navbar-image">
+        <img id="navbar-img" src="https://assets.ajio.com/medias/sys_master/images/images/hd3/h34/47497754640414/16022022-D-Unisex-topstrip.jpg" alt="">
+      </div>
+
+
+      <!-- cart section -->
+     
+    <div>
+        <h1 id="my bag" style="text-align:center ;">My Bag</h1>
+    </div>
+
+    <div id="Cart">
+
+     <div id="left-Cart">
+      <!-- <div id="item in cart">
+         <div id="img in cart">
+        <img src="" alt="">
+      </div>
+      <div id="name of product">
+         <h5></h5>
+      </div>
+      <div id="qty">
+        <h4>quantity <span>qty</span></h4>
+      </div>
+        <div id="total price">
+          <div>Price <span> </span></div>
+          <div>Delete</div>
+        </div>
+      </div> 
+    </div> -->
+</div>
+
+    <div id="Right-Cart">
+        <div id="details">
+        <h2>Order Details</h2>
+        <div>Bag Total <span></span></div>
+        <div>Total Amount <span></span></div>
+        <a href="./address.html"><button class="shipping_btn">PROCEED TO SHIPPING</button></a>
+      </div>
+
+        <div id="coupon">
+            <div id="coupon header">Apply Coupon</div>
+            <div id="input box"><input type="text" placeholder="Enter Coupon Code" value=""><button class="btn">Apply</button></div>
+            <div id="valid coupons">
+              <h2>Applicable Coupons</h2>
+            <ul id="coupon lists">
+            <li class="list1">
+                <div class="detail info">
+                <p>"Savings :" <span> &#8377 500</span></p>
+                <p>apply : FIRSTBUY</p>
+                <p>Get Up To Extra 25% Off On ₹1490 On Your First Purchase. Max Discount Rs. 2000.</p>
+                </div>
+
+            </li>
+            <li class="list2">
+                <div class="detail info">
+                    <p>"Savings :" <span> &#8377 250</span></p>
+                    <p>apply : AJIO_USER</p>
+                    <p>Get Up To Extra 15% Off On &#8377 1000 On Every Purchase. Max Discount Rs. 1500.</p>
+                    </div>
+            </li>
+            </ul>
+            </div>
+         </div>
+    </div> 
+
+        </div>
+</body>
+</html>
+<script>
+    var Data = [
+    {
+        imageURL:
+            "https://assets.ajio.com/medias/sys_master/root/20220127/RXhg/61f2daaef997dd66234079f3/gosriki_pink_geometric_print_straight_kurta_set.jpg",
+        brand: "GOSRIKI",
+        product: "Geometric Print Straight Kurta Set",
+        gender: "female",
+        category: "kurta",
+        price: 895,
+        strikedOffPrice: 3196,
+    },
+    {
+        imageURL:
+            "https://assets.ajio.com/medias/sys_master/root/20220124/8ATC/61eeae7af997dd662337baf6/gulmohar_jaipur_yellow_floral_printed_straight_kurta_set.jpg",
+        brand: "GULMOHAR JAIPUR",
+        product: "Floral Printed Straight Kurta Set",
+        gender: "female",
+        category: "kurta",
+        price: 1199,
+        strikedOffPrice: 2499,
+    },
+    {
+        imageURL:
+            "https://assets.ajio.com/medias/sys_master/root/20220124/IYjE/61eeadd8f997dd662337b165/gulmohar_jaipur_maroon_floral_print_straight_kurta_set.jpg",
+        brand: "GULMOHAR JAIPUR",
+        product: "Floral Print Straight Kurta Set",
+        gender: "female",
+        category: "kurta",
+        price: 1199,
+        strikedOffPrice: 2499,
+    },
+    {
+        imageURL:
+            "https://assets.ajio.com/medias/sys_master/root/20211006/ntzG/615d2b66f997ddce89026c9f/ishoo_white_polka-dot_flared_kurta_set.jpg",
+        brand: "ISHOO",
+        product: "Polka-dot Flared Kurta Set",
+        gender: "female",
+        category: "kurta",
+        price: 959,
+        strikedOffPrice: 1599,
+    },
+    {
+        imageURL:
+            "https://assets.ajio.com/medias/sys_master/root/20220124/zTEx/61eeac9bf997dd6623379e6d/gulmohar_jaipur_teal_floral_print_flared_kurta_set.jpg",
+        brand: "GULMOHAR JAIPUR",
+        product: "Floral Print Flared Kurta Set",
+        gender: "female",
+        category: "kurta",
+        price: 1299,
+        strikedOffPrice: 2499,
+    },
+    {
+        imageURL:
+            "https://assets.ajio.com/medias/sys_master/root/20211125/cMM7/619fbe5aaeb2690110d8b766/gosriki_pink_floral_printed_straight_kurta_sets.jpg",
+        brand: "GOSRIKI",
+        product: "Floral Printed Straight Kurta Sets",
+        gender: "female",
+        category: "kurta",
+        price: 895,
+        strikedOffPrice: 3401,
+    }
+]
+ localStorage.setItem("CartItems",JSON.stringify(Data));
+  var cart = JSON.parse(localStorage.getItem("CartItems")) || [];
+ var Quantity = 1;
+  display(cart);
+
+  function display(cart){
+    document.getElementById("left-Cart").innerHTML = "";
+    cart.map(function(el,index){
+    var div = document.createElement("div");
+    div.className = "product data";
+    var imgDiv = document.createElement("div");
+    var image = document.createElement("img");
+    image.setAttribute("src",el.imageURL);
+    image.setAttribute("alt",el.product);
+    imgDiv.append(image);
+    var productDiv = document.createElement("div");
+    var product = document.createElement("h5");
+    product.innerText = el.product;
+     productDiv.append(product);
+     var divBox = document.createElement("div");
+    var divContainer = document.createElement("div");
+    divContainer.className = "divContainer";
+    var decre = document.createElement("button");
+    decre.innerText = "-"
+    decre.addEventListener("click",function(){
+        decrementValue(index);
+    });
+    var quantity = document.createElement("input");
+     quantity.innerHTML = totalQuantity;
+    
+    var incre = document.createElement("button");
+    incre.innerText = "+"
+    incre.addEventListener("click",function(){
+        incrementValue(index);
+    });
+    divContainer.append(decre,quantity,incre);
+     var price = document.createElement("p");
+     price.innerText = "Rs. :" + (+totalQuantity*el.price);
+     
+    
+    var remove = document.createElement("button");
+    remove.innerText = "Delete from Cart";
+    remove.addEventListener("click",function(){
+        dltFromCart(index);
+    });
+    divBox.append(divContainer,price,remove);
+    div.append(imgDiv,productDiv,divBox);
+     document.getElementById("left-Cart").append(div);
+   }); 
+  }
+
+  function dltFromCart(index){
+     cart.splice(index,1);
+     localStorage.setItem("CartItems",JSON.stringify(cart));
+     display(cart);
+  }
+  function decrementValue(index){
+    Quantity = Quantity-1;
+    
+    if(Quantity===0){
+        cart.pop(index);
+        localStorage.setItem("CartItems",JSON.stringify(cart));
+        display(cart);
+    }
+  }
+
+</script>
