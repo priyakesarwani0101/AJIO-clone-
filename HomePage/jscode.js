@@ -21,7 +21,7 @@ var slider2 = new Swiper ('.slider2', {
    autoplay:{
     delay:3000
    },
-   slidesPerView: 1,
+  
    loop:true,
     pagination: {
       el: '.swiper-pagination',
@@ -57,6 +57,7 @@ var slider3 = new Swiper ('.slider3', {
     autoplay:{
         delay:3000
     },
+   
     loop:true,
     pagination: {
       el: '.swiper-pagination',

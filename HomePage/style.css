@@ -2,45 +2,50 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all 1.1s;
+    background-size: cover;
    
 }
-.ajio{
-       
-    display: flex;
- border: 1px solid black;
- width: 90%;
+.fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 84px;
+   background-color:white;
+  }
 
-margin: 26px 0 10px 60px;
+.ajio{
+display: flex;
+ box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+ width: 90%;
+margin: 0px 0 10px 60px;
+
  justify-content: space-evenly;
+
    
 }
+
 
 p{
    
     border: none;
+    color:black;
     padding: 10px 10px;
     margin-top: 30px;
 }
-
-
-
 #box{
- 
-    flex-grow: .6;
-    border: 1px solid red;
-    margin-top: 24px;
+   flex-grow: .6;
+ margin-top: 15px;
  text-align: center;
- 
 }
 #box img{
     height: 38px;
-    width: 130px;;
-   
+    width: 130px;; 
 }
 .ajio>div{
-  
-    /* width: 100px;
-    height: 100px; */
     align-items: center;
 }
 #topBtn1{
@@ -48,7 +53,7 @@ p{
     font: 14px ScourceSansPro;
     border: 0;
     background-color: white;
-
+    cursor:pointer;
 }
 #topBtn2{
     color: #2c4152;
@@ -56,7 +61,6 @@ p{
    font: 14px ScourceSansPro;
     border: 0;
     background-color: white;
-
 }
 #search{
     margin-top: 12px;
@@ -65,11 +69,23 @@ p{
     width: 230px;
     background-color: #fffded;
 }
+#searchimg{
+ margin-left:-30px;
+ cursor:pointer;
+ 
+}
+.ajioluxe{
+   margin-right:-210px;
+   padding:4px 9px 4px 9px;
+   border:0;
+   background-color:black;
+   color:white;
+   cursor:pointer;
+}
 #wishlist{
     margin-top: 30px;
     border: 0;
     background-color: white;
-
 }
 #wishlist img{
     height: 38px;
@@ -78,24 +94,27 @@ p{
     margin-top: 27px;
     border: 0;
     background-color: white;
-
 }
 #bag img{
     height: 47px;
 }
+a{
+    text-decoration:none;
+}
 /*sliding part starts*/
+
 .swiper-container{
     width: 100%;
+    margin-top:86px;
     height: fit-content;
     overflow: hidden;
 }
 
+
 .swiper-slide img{
  width: 100%;
 }
-#sliderDiscount{
-    margin-top: 28px;
-}
+
 /*discount page*/
 #spotlight{
     margin: 10px 0px 10px 0px;
@@ -133,12 +152,13 @@ p{
   object-fit: cover;
 }
 
-.swiper-button-prev,
+
+/* .swiper-button-prev,
 .swiper-button-next {
 	width: 32px;
 	height: 32px;
 	margin-top: -16px;
-}
+} */
 
 .swiper-button-prev {
 		background: url(https://haniwaman.com/cms/wp-content/uploads/2018/05/swiper3.png)  no-repeat center center / contain;
@@ -175,20 +195,25 @@ p{
     margin-top: 30px;
 }
 
-
-/* Footer code hear */
-.footertop{
+/* Footer 3images */
+.bottom_icons {
     display: flex;
-    flex-direction: row;
-    border: 2px solid red;
-    height: 150px;
+    width: 70%;
+    margin-top: 1%;
+    margin-left: 39%;
+    /* border: 3px solid #5a5a55; */
 }
-.footertop div{
-    border: 2px solid black;
-    width: 33%;
-    height: 90px;
-   margin: 0 auto;
+.exchange_icons {
+    /* border:1px solid red; */
+    width: 100%;
+    margin: auto;
+    margin-left: -270px;
 }
+.exchange_icons img {
+    width:20%;
+}
+/* Footer code hear */
+
 
 
 
@@ -296,14 +321,17 @@ ul {
     justify-content: space-between;
     display: flex;
     
+} 
+#bottom-footer p{
+    color: white;
 }
 #main{
     /* font-size: 14px; */
 
     width: 40%;
     margin-left: 110px;
-    margin-top: 30px;
-    color: rgb(255,255,255);
+    margin-top: -5px;
+    
     
 }
 
@@ -316,8 +344,7 @@ ul {
     gap: 10px;
 }
 #btm-right{
-    margin-top: 32px;
-    color: rgb(255,255,255);
+    
     margin-right: 110px;
 }
 #f-btns{
@@ -346,5 +373,15 @@ ul {
     border-radius: 50px;
     cursor: pointer;
     
+}
+/* Zoom in transform */
+
+.swiper-wrapper > div :hover{
+    transition-duration: 0s ease;
+transform: scale(1.04);
+}
+.img:hover{
+    transition-duration: 0s ease;
+    transform: scale(1.04);
 }
 
