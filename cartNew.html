@@ -9,19 +9,21 @@
 </head>
 <body>
    <!-- Navbar section -->
-   <div id="navbar">
+   <!-- <div id="navbar">
     <div id="navbar-left">
-        <img id="site-logo" src="https://assets.ajio.com/static/img/Ajio-Logo.svg" alt="">
+        <a href="index.html">
+        <img id="site-logo" src="https://assets.ajio.com/static/img/Ajio-Logo.svg" alt="ajio-logo">
+    </a>
     </div>
     <div id="navbar-right">
         <div id="right-upper">
-            <a href=""><p id="ru">Sign In / Join AJIO</p></a>
+            <a href="Login.html"><p id="ru">Sign In / Join AJIO</p></a>
             <a href=""><p id="ru">Customer Care</p></a>
             <button id="navbar-button">Visit AJIOLUXE</button>
         </div>
         <div id="right-lower">
-            <p id="rl">MEN</p>
-            <p id="rl">WOMEN</p>
+            <a href="Mens.html"> <p id="rl">MEN</p></a>
+             <a href="Womens.html"><p id="rl">WOMEN</p></a>
             <p id="rl">KIDS</p>
             <p id="rl">INDIE</p>
             <p id="rl">HOME AND KITCHEN</p>
@@ -30,7 +32,30 @@
             <img id="bar-img"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjHuCTCHiz7-sR9YwmlVHDZ0UXU-tcjDRIzmGlub9of64k0gsAJXe29kR-9Bpfj1f_YAg&usqp=CAU" alt="">
         </div>
     </div>
-    </div>
+    </div> -->
+    <nav class="fixed-nav-bar">
+        <div id="ajio">
+          <div id="box"><a href="index.html"><img src="	https://assets.ajio.com/static/img/Ajio-Logo.svg" alt="Ajio-Logo"> </div></a>
+          <div id="men"><a href="Mens.html"><P>MEN</P></a></div>
+          <div id="women"><a href="Womens.html"><P>WOMEN</P></a></div>
+          <div id="kids"><a href="Kids.html"><P>KIDS</P></a></div>
+          <div id="indie"><P>INDIE</P> </div>
+          <div id="home&kitchen"><a href=" Kitchen.html"><P>HOME AND KITCHEN</P></a> </div>
+          <div>
+              <div>
+                <div><a href="Login.html"><button id="topBtn1">Sign In/Join AJIO</button></a>
+                <button id="topBtn2">Customer Care</button></div>
+             </div>
+              <input type="text"  id="search" placeholder="Search AJIO">
+              <i id="searchimg" type="submit" class="fa fa-search"></i>
+            </div>
+            <div><a href ="ajioluxe.html"><button class="ajioluxe">Visit AJIOLUXE</button></a></div>
+            <div id="wishlist"><a href="Wishlist.html"><img src="https://assets.ajio.com/static/img/wishlistIcon.svg" alt="Wishlist"></a></div>
+            <div id="bag"><a href="cartNew.html"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjHuCTCHiz7-sR9YwmlVHDZ0UXU-tcjDRIzmGlub9of64k0gsAJXe29kR-9Bpfj1f_YAg&usqp=CAU"></a></div>
+         </div>
+      </div>
+      </nav>
+
 
     <div id="navbar-image">
         <img id="navbar-img" src="https://assets.ajio.com/medias/sys_master/images/images/hd3/h34/47497754640414/16022022-D-Unisex-topstrip.jpg" alt="">
@@ -50,7 +75,7 @@
          <div id="img in cart">
         <img src="" alt="">
       </div>
-      <div id="name of product">
+      <div id="name of name">
          <h5></h5>
       </div>
       <div id="qty">
@@ -181,7 +206,7 @@
 
 <!-- <hr /> -->
 
-<div id="bottom-footer">
+<!-- <div id="bottom-footer">
 
     <div id="main">
         <div>
@@ -204,82 +229,15 @@
         <button id="foot-btn">></button>
         <button id="foot-btn1">...</button>
         
-    </div>
+    </div> -->
 </body>
 </html>
 <script>
-    var Data = [
-    {
-        imageURL:
-            "https://assets.ajio.com/medias/sys_master/root/20220127/RXhg/61f2daaef997dd66234079f3/gosriki_pink_geometric_print_straight_kurta_set.jpg",
-        brand: "GOSRIKI",
-        product: "Geometric Print Straight Kurta Set",
-        gender: "female",
-        category: "kurta",
-        price: 895,
-        strikedOffPrice: 3196,
-        cartQuantity:1
-    },
-    {
-        imageURL:
-            "https://assets.ajio.com/medias/sys_master/root/20220124/8ATC/61eeae7af997dd662337baf6/gulmohar_jaipur_yellow_floral_printed_straight_kurta_set.jpg",
-        brand: "GULMOHAR JAIPUR",
-        product: "Floral Printed Straight Kurta Set",
-        gender: "female",
-        category: "kurta",
-        price: 1199,
-        strikedOffPrice: 2499,
-      cartQuantity:1
-    },
-    {
-        imageURL:
-            "https://assets.ajio.com/medias/sys_master/root/20220124/IYjE/61eeadd8f997dd662337b165/gulmohar_jaipur_maroon_floral_print_straight_kurta_set.jpg",
-        brand: "GULMOHAR JAIPUR",
-        product: "Floral Print Straight Kurta Set",
-        gender: "female",
-        category: "kurta",
-        price: 1199,
-        strikedOffPrice: 2499,
-      cartQuantity:1
-    },
-    {
-        imageURL:
-            "https://assets.ajio.com/medias/sys_master/root/20211006/ntzG/615d2b66f997ddce89026c9f/ishoo_white_polka-dot_flared_kurta_set.jpg",
-        brand: "ISHOO",
-        product: "Polka-dot Flared Kurta Set",
-        gender: "female",
-        category: "kurta",
-        price: 959,
-        strikedOffPrice: 1599,
-        cartQuantity:1
-    },
-    {
-        imageURL:
-            "https://assets.ajio.com/medias/sys_master/root/20220124/zTEx/61eeac9bf997dd6623379e6d/gulmohar_jaipur_teal_floral_print_flared_kurta_set.jpg",
-        brand: "GULMOHAR JAIPUR",
-        product: "Floral Print Flared Kurta Set",
-        gender: "female",
-        category: "kurta",
-        price: 1299,
-        strikedOffPrice: 2499,
-      cartQuantity:1
-    },
-    {
-        imageURL:
-            "https://assets.ajio.com/medias/sys_master/root/20211125/cMM7/619fbe5aaeb2690110d8b766/gosriki_pink_floral_printed_straight_kurta_sets.jpg",
-        brand: "GOSRIKI",
-        product: "Floral Printed Straight Kurta Sets",
-        gender: "female",
-        category: "kurta",
-        price: 895,
-        strikedOffPrice: 3401,
-        cartQuantity:1
-    }
-]
     
   var cart = JSON.parse(localStorage.getItem("CartItems")) || [];
+  console.log("---cart--",cart)
   if(cart.length==0){
-    localStorage.setItem("CartItems",JSON.stringify(Data));
+    // localStorage.setItem("CartItems",JSON.stringify(Data));
     window.location.href = "./emptyCart.html";
   }
   var totalAmount = 0;
@@ -293,13 +251,13 @@
     div.className = "product-data";
     var imgDiv = document.createElement("div");
     var image = document.createElement("img");
-    image.setAttribute("src",el.imageURL);
-    image.setAttribute("alt",el.product);
+    image.setAttribute("src",el.image_url);
+    image.setAttribute("alt",el.name);
     imgDiv.append(image);
     var productDiv = document.createElement("div");
-    var product = document.createElement("h5");
-    product.innerText = el.product;
-     productDiv.append(product);
+    var name = document.createElement("h5");
+    name.innerText = el.name;
+     productDiv.append(name);
      var divBox = document.createElement("div");
     var divContainer = document.createElement("div");
     divContainer.className = "divContainer";
@@ -308,7 +266,8 @@
     decre.addEventListener("click",function(){
         el.cartQuantity =  decrementValue(index,el.cartQuantity);
         quantity.value = el.cartQuantity
-        price.innerText = "Rs. :" + (+el.cartQuantity*el.price);
+    
+        price.innerText = "Rs. :" + (+el.cartQuantity*+el.price);
         localStorage.setItem("CartItems",JSON.stringify(cart));
         calculateTotalCartAmount()
     });
@@ -321,14 +280,14 @@
     incre.addEventListener("click",function(){
         el.cartQuantity =  incrementValue(index,el.cartQuantity);
         quantity.value = el.cartQuantity
-        price.innerText = "Rs. :" + (+el.cartQuantity*el.price);
+        price.innerText = "Rs. :" + (+el.cartQuantity*+el.price);
         localStorage.setItem("CartItems",JSON.stringify(cart));
         calculateTotalCartAmount()
 
     });
     divContainer.append(decre,quantity,incre);
      var price = document.createElement("p");
-     price.innerText = "Rs. :" + (+el.cartQuantity*el.price);
+     price.innerText = "Rs. :" + (+el.cartQuantity*+el.price);
      
     
     var remove = document.createElement("button");
@@ -350,7 +309,7 @@
   function decrementValue(index, itemQuantity){
     --itemQuantity;
     if(itemQuantity===0){
-        cart.splice(index,1); 
+        cart.splice(index,1);
         localStorage.setItem("CartItems",JSON.stringify(cart));
         display(cart);
     }
@@ -364,7 +323,7 @@
     totalAmount=0;
     let cart = JSON.parse(localStorage.getItem("CartItems"))
     cart.forEach(element => {
-    totalAmount+=element.cartQuantity*element.price
+    totalAmount+=element.cartQuantity*+element.price
   });
   document.getElementById('total-amount').innerText = `Rs. ${totalAmount}`
   document.getElementById('bag-total').innerText = `Rs. ${totalAmount}`
