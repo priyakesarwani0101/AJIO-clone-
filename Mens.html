@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mens item</title>
+  <title>Mens wear & Accessories</title>
   <style>
       #ajio{
 display: flex;
@@ -135,7 +135,8 @@ a{
       background-color:rgb(123, 112, 41);
     }
     .manage{
-      margin: -8px;
+      margin: -10px;
+      margin-top: 2px;
     }
     #category{
       display: flex;
@@ -182,8 +183,12 @@ a{
       color: rgb(1, 1, 71);
       font-family: Arial, Helvetica, sans-serif;
     }
-    .offprice{
+    .offPrice{
        text-decoration: line-through;
+       margin: -3px;
+    }
+    .boxer > h4{
+      margin: 5px;
     }
   </style>
 </head>
@@ -843,6 +848,7 @@ function display(data){
     price.setAttribute("class","manage")
     var strickedprice = document.createElement("p");
     strickedprice.innerText = elem.strikedoffprice;
+    strickedprice.setAttribute("class","offPrice")
     var btn = document.createElement("button");
     btn.innerText = "Add to Cart";
     btn.setAttribute("id","btn")
