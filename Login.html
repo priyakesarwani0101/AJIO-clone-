@@ -21,10 +21,10 @@ section{
 
 .box{
     padding: 5px 25px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    
     background-color: #fff;
-    border: 1px solid red;
+    margin-top: 100px;
 }
 
 .box h1{
@@ -45,7 +45,7 @@ input{
     border-radius: 5px;
     border: 1px solid #b1acac;
     font-size: 15px;
-    background-color: wheat;
+    background-color: white;
 }
 
 label{
@@ -93,130 +93,319 @@ input[type="submit"]:hover{
     padding: 7px 0 0 0px;
     background-color: rgba(255, 255, 255, 0);
 }
-#navbar{
-            height:72px;
-            width:100%;
-            border-top: 3px solid rgb(47,66,84);
-            display: flex;
-            /* justify-content: space-around; */
-            margin-bottom: 40px;
+
+.fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 84px;
+   background-color:white;
+  }
+
+.ajio{
+display: flex;
+ box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+ width: 90%;
+margin: 0px 0 10px 60px;
+
+ justify-content: space-evenly;
+
+   
+}
+
+
+p{
+   
+    border: none;
+    color:black;
+    padding: 10px 10px;
+    margin-top: 30px;
+}
+#box{
+   flex-grow: .6;
+ margin-top: 15px;
+ text-align: center;
+}
+#box img{
+    height: 38px;
+    width: 130px;; 
+}
+.ajio>div{
+    align-items: center;
+}
+#topBtn1{
+    color: #2c4152;
+    font: 14px ScourceSansPro;
+    border: 0;
+    background-color: white;
+    cursor:pointer;
+}
+#topBtn2{
+    color: #2c4152;
+    margin-left: 13px;
+   font: 14px ScourceSansPro;
+    border: 0;
+    background-color: white;
+}
+#search{
+    margin-top: 12px;
+    border-radius: 20px;
+    padding: 10px;
+    width: 230px;
+    background-color: #fffded;
+}
+#searchimg{
+ margin-left:-30px;
+ cursor:pointer;
+ 
+}
+.ajioluxe{
+   margin-right:-210px;
+   padding:4px 9px 4px 9px;
+   border:0;
+   background-color:black;
+   color:white;
+   cursor:pointer;
+}
+#wishlist{
+    margin-top: 30px;
+    border: 0;
+    background-color: white;
+}
+#wishlist img{
+    height: 38px;
+}
+#bag{
+    margin-top: 27px;
+    border: 0;
+    background-color: white;
+}
+#bag img{
+    height: 47px;
+}
+a{
+    text-decoration:none;
+}
+#signup{
+    background-color: wheat;
+}
+#signup:hover{
+    background-color: orange;
+}
+
+/* -----mid img----*/
+
+.bottom_icons {
+    display: flex;
+    width: 70%;
+    margin-top: 1%;
+    margin-left: 23%;
+    /* border: 3px solid #5a5a55; */
+}
+.exchange_icons {
+    /* border:1px solid red; */
+    width: 100%;
+    margin: auto;
+}
+.exchange_icons img {
+    width:20%;
+}
+   
+
+/* ------footer design---------- 
+.footer {
+    text-transform: uppercase;
+    background-color: rgb(44, 65, 82);
+    box-sizing: border-box;
+    padding: 70px 70px;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    border-top: gray;
+    text-align: justify;
+    margin-top: 0px;
     
-        }
-        #navbar-left{
-            height:65px;
-            width:25%;
-            border:1px solid transparent;
-            margin-left: 80px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 20%;
+    padding: 0 30px;
+}
+
+.footer-col h4 {
+    font-size: 13px;
+    color: rgb(255,255,255);
+    margin-bottom: 35px;
+    font-weight: bolder;
+    position: relative;
+    margin-left: 38px;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.footer-col ul li a {
+    font-size: 11px;
+    text-decoration: none;
+    font-weight: 300;
+    color: rgb(255,255,255);
+    display: block;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    padding-left: 8px;
+}
+
+.social-links a {
+    margin-left: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    line-height: 40px;
+    border-radius: 15%;
+    color: #222;
+    transition: all 0.5s ease;
+
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+#first-right {
+    height: 100%;
+    width: 25%;
+    /* font-size: 11px; 
+    color: rgb(104, 101, 101);
+}
+
+.right {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    text-align: left;
+}
+
+.right>p {
+    font-family: HCoGothamSSmLight, Arial, Sans-Serif;
+    font-size: 1rem;
+    font-weight: 600;
+    border-left: 1px solid gray;
+    padding-left: 10px;
+    color: gray;
+}
+
+#bottom-footer{
+    height: 140px;
+    width: 100%;
+    background-color: rgb(44, 65, 82);
+    justify-content: space-between;
+    display: flex;
     
-        }
-        #navbar-right{
-            height:100%;
-            width:60%;
-            border:1px solid transparent;
-            margin-right: 50px;
-            margin-left: 50px;
-            
+} 
+#main{
+    /* font-size: 14px; 
+
+    width: 40%;
+    margin-left: 110px;
+    margin-top: 30px;
+    color: rgb(255,255,255);
     
-        }
-        #right-upper{
-            height:50% ;
-            width:100%;
-            border:1px solid transparent;
-            display:flex;
-            justify-content: right;
-            gap:22px;
-            align-items: center;
-        }
-        #right-upper:hover{
-            cursor: pointer;
-        }
-        #right-lower{
-            height:50% ;
-            width:100%;
-            border:1px solid transparent;
-            display:flex;
-            justify-content: space-around;
-            align-items: center;
-            font-family: sans-serif;
-            font-size: 14px;
-            color:rgb(106,106,106);
-            margin-top: 3px;
-        }
-        #rl:hover{
-            font-weight: bold;
-            cursor: pointer;
-        }
-        #site-logo{
-            height:100%;
-            width:35%;
-            margin-left: 60px;
-        }
-        #navbar-button{
-            height:100%;
-            background-color: black;
-            color:white;
-            font-size: 12px;
-            font-family: sans-serif;
-            margin-right: 30px;
-            cursor: pointer;
-           
-        }
-        #navbar-input{
-            border-radius: 15px;
-            width: 250px;
-            height:25px;
+}
+
+#btm-left{
+    font-size: 14px;
+    margin: auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+}
+#btm-right{
+    margin-top: 32px;
+    color: rgb(255,255,255);
+    margin-right: 110px;
+}
+#f-btns{
+    display: grid;
+    text-align: center;
+   margin-top: 18px;
+    height: 110px;
+    width: 55px;
+    margin-right: 45px;
+    grid-gap: 5px;
+
+}
+#foot-btn{
+  
+    background-color: #ffffff;
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#foot-btn1{
+    background-color: #ffffff;
+    font-size: 35px;
+    height: 44px;
+    width: 44px;
+    border-radius: 50px;
+    cursor: pointer;
     
-        }
-        #ru{
-            font-size: 12px;
-            color:rgb(106,106,106);
-            text-decoration: none;
-            font-family: sans-serif;
-        }
-        #navbar-image{
-            height:100px;
-            width:100%;
-            border:1px solid transparent;
-            margin-top: 10px;
-            
-        }
-        #navbar-img{
-            height:100%;
-            width:100%;
-        }
-        #bar-img{
-            height:100%;
-            width:4%;
-            cursor: pointer;
-            background-color: rgb(47,66,84);
-            color: white;
-        }
+}
+.product_left_container
+{
+    height: 450px;
+    overflow-y: scroll;
+}  */
+
+
     </style>
 </head>
 
 <body>
-    <div id="navbar">
-        <div id="navbar-left">
-            <img id="site-logo" src="https://assets.ajio.com/static/img/Ajio-Logo.svg" alt="">
-        </div>
-        <div id="navbar-right">
-            <div id="right-upper">
-                <a href=""><p id="ru">Sign In / Join AJIO</p></a>
-                <a href=""><p id="ru">Customer Care</p></a>
-                <button id="navbar-button">Visit AJIOLUXE</button>
-            </div>
-            <div id="right-lower">
-                <p id="rl">MEN</p>
-                <p id="rl">WOMEN</p>
-                <p id="rl">KIDS</p>
-                <p id="rl">INDIE</p>
-                <p id="rl">HOME AND KITCHEN</p>
-                <input id="navbar-input" type="text" placeholder="Search AJIO">
-                <img id="bar-img" src="https://i.pinimg.com/originals/fc/fa/0c/fcfa0c367d786deeaf42dec2fda70e47.png" alt="">
-                <img id="bar-img"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjHuCTCHiz7-sR9YwmlVHDZ0UXU-tcjDRIzmGlub9of64k0gsAJXe29kR-9Bpfj1f_YAg&usqp=CAU" alt="">
-            </div>
-        </div>
-        </div>
+    <nav class="fixed-nav-bar">
+        <div class="ajio">
+              <div id="box"><a href="HomePage.html"><img src="	https://assets.ajio.com/static/img/Ajio-Logo.svg" alt="Ajio-Logo"> </div></a>
+              <div id="men"><a href="Mens.html"><P>MEN</P></a></div>
+              <div id="women"><a href="Womens.html"><P>WOMEN</P></a></div>
+              <div id="kids"><a href="Kids.html"><P>KIDS</P></a></div>
+              <div id="indie"><P>INDIE</P> </div>
+              <div id="home&kitchen"><a href=" Kitchen.html"><P>HOME AND KITCHEN</P></a> </div>
+              <div>
+                  <div>
+                    <div><a href="Login.html"><button id="topBtn1">Sign In/Join AJIO</button></a>
+                    <button id="topBtn2">Customer Care</button></div>
+                 </div>
+                  <input type="text"  id="search" placeholder="Search AJIO">
+                  <i id="searchimg" type="submit" class="fa fa-search"></i>
+                </div>
+                <div><a href ="ajioluxe.html"><button class="ajioluxe">Visit AJIOLUXE</button></a></div>
+                <div id="wishlist"><a href="Wishlist.html"><img src="https://assets.ajio.com/static/img/wishlistIcon.svg" alt="Wishlist"></a></div>
+                <div id="bag"><a href="Cart.html"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjHuCTCHiz7-sR9YwmlVHDZ0UXU-tcjDRIzmGlub9of64k0gsAJXe29kR-9Bpfj1f_YAg&usqp=CAU"></a></div>
+             </div>
+         </div>
+         
+        </nav>
     <section>
         <div class="box">
             <h1>Sign In</h1>
@@ -230,12 +419,117 @@ input[type="submit"]:hover{
 
                 <p></p>
 
-                <input id="signup" type="submit" value="SIGN UP" />
+                <input id="signup" type="submit" value="Log in" />
             </form>
-            <p>Don't have an account? <a href="http://127.0.0.1:5500/AJIO-clone-/Signup.html"> Sign Up</a> </p>
+            <p>Don't have an account? <a href="http://127.0.0.1:5500/AJIO-clone-/Signup.html">Sign up</a> </p>
         </div>
 
     </section>
+    <!-- mid imgs -->
+    <hr class="hr">
+
+    <div class="bottom_icons">
+        <div class="exchange_icons">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOSleffsgSsashwROvgH26qoTpSqlQBMe0Shd5emGuHC7qRZTl" alt=""><br><br>
+            <div>EASY EXCHANGE</div>
+        </div>
+    
+        <div class="exchange_icons">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStPsdLlQq9T_-o_ndL1lc66uwb0rnsXF7tdft3ExBdkJik6LAa" alt=""><br><br>
+            <div>100% HANDPICKED</div>
+        </div>
+    
+        <div class="exchange_icons">
+            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScEyVI4gDhOVv62XgCYGYnZImfcezYA1huL35dY6yZARjpV6-2" alt=""><br><br>
+            <div>ASSURED QUALITY</div>
+        </div>
+    
+    </div>
+     <hr> 
+    
+    <!-- footer 
+    
+    <footer class="footer">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Ajio</h4>
+                <ul>
+                    <li><a href="#">Who We Are</a></li>
+                    <li><a href="#">Join Our Team</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">We Respect Your Privacy</a></li>
+                    <li><a href="#">Fees & Payments</a></li>
+                    <li><a href="#">Returns & Refunds Policy</a></li>
+                    <li><a href="#">Promotions Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>HELP</h4>
+                <ul>
+                    <li><a href="#">Track Your Order</a></li>
+                    <li><a href="#">Frequently Asked Questions</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Cancellations</a></li>
+                    <li><a href="#">Payments</a></li>
+                    <li><a href="#">Customer Care</a></li>
+                    <li><a href="#">How Do I Redeem My Coupon</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-col">
+                <h4>Shop by</h4>
+                <ul>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Indie</a></li>
+                    <li><a href="#">Stores</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Brand Directory</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Collections</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-col">
+                <h4>Follow us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram=AJIOlife</a></li>
+                    <li><a href="#">Instagram=AJIO LUXE</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+     <hr /> 
+    
+    <div id="bottom-footer">
+    
+        <div id="main">
+            <div>
+                <p>Payment Methods</p>
+            </div>
+            <div id="btm-left">
+                <p>Net Banking</p>
+                <p>Verified By Visa</p>
+                <p>Naster Card</p>
+                <p>CASH ON DELIVERY</p>
+                <p>Jio Money</p>
+            </div>
+        </div>
+        <div id="btm-right">
+            <p>Secure systems</p>
+            <p>256 BIT</p>
+        </div>
+    
+        <div id="f-btns">
+            <button id="foot-btn">></button>
+            <button id="foot-btn1">...</button>
+            
+        </div> -->
 
 </body>
 
