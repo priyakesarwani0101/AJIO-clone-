@@ -324,3 +324,31 @@ var swiper = new Swiper(".mySwiper13", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+
+
+
+// document.getElementById("search").value=""
+// var men;
+function searchCtg(){
+ 
+   var men=document.getElementById("search").value;
+  if(men==="men"){
+    console.log(men)
+   window.location.href="Mens.html"
+  }
+  else if(men=== "women"){
+    console.log(men)
+    window.location.href="Womens.html"
+   }
+   else if(men=== "kids"){
+    console.log(men)
+    window.location.href="Kids.html"
+   }
+   else if(men=== "kitchen"){
+    console.log(men)
+    window.location.href="Kitchen.html"
+   }
+   document.getElementById("search").value=""
+
+}
