@@ -66,25 +66,26 @@
 
     <div id="Right-Cart">
         <div id="details">
-        <h2>Order Details</h2>
-        <div>Bag Total <span></span></div>
-        <div>Total Amount <span></span></div>
+        <h3>Order Details</h3>
+        <div><span>Bag Total</span>  <span id = 'bag-total'></span></div>
+        <div><span>Delivery Fees: </span><span>Free</span></div>
+        <div><span>Total Amount</span> <span id = 'total-amount'></span></div>
         <a href="./address.html"><button class="shipping_btn">PROCEED TO SHIPPING</button></a>
       </div>
 
         <div id="coupon">
-            <div id="coupon header">Apply Coupon</div>
-            <div id="input box"><input type="text" placeholder="Enter Coupon Code" value=""><button class="btn">Apply</button></div>
-            <div id="valid coupons">
-              <h2>Applicable Coupons</h2>
-            <ul id="coupon lists">
+            <div id="coupon-header"> <h3>Apply Coupon</h3></div>
+            <div id="coupon-input-box"><input id="coupon-input" type="text" placeholder="Enter Coupon Code"><button id="coupon-btn">Apply</button></div>
+            <div id="valid-coupons">
+              <h4>Applicable Coupons</h4>
+            <ul id="coupon-lists">
             <li class="list1">
-                <div class="detail info">
+                <div class="detail-info">
                 <p>"Savings :" <span> &#8377 500</span></p>
                 <p>apply : FIRSTBUY</p>
                 <p>Get Up To Extra 25% Off On ₹1490 On Your First Purchase. Max Discount Rs. 2000.</p>
                 </div>
-
+         <hr>
             </li>
             <li class="list2">
                 <div class="detail info">
@@ -97,8 +98,113 @@
             </div>
          </div>
     </div> 
-
         </div>
+
+          <!-- mid imgs -->
+          <hr class="hr">
+
+<div class="bottom_icons">
+    <div class="exchange_icons">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOSleffsgSsashwROvgH26qoTpSqlQBMe0Shd5emGuHC7qRZTl" alt=""><br><br>
+        <div>EASY EXCHANGE</div>
+    </div>
+
+    <div class="exchange_icons">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStPsdLlQq9T_-o_ndL1lc66uwb0rnsXF7tdft3ExBdkJik6LAa" alt=""><br><br>
+        <div>100% HANDPICKED</div>
+    </div>
+
+    <div class="exchange_icons">
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScEyVI4gDhOVv62XgCYGYnZImfcezYA1huL35dY6yZARjpV6-2" alt=""><br><br>
+        <div>ASSURED QUALITY</div>
+    </div>
+
+</div>
+ <hr> 
+
+<!-- footer -->
+
+<footer class="footer">
+    <div class="row">
+        <div class="footer-col">
+            <h4>Ajio</h4>
+            <ul>
+                <li><a href="#">Who We Are</a></li>
+                <li><a href="#">Join Our Team</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">We Respect Your Privacy</a></li>
+                <li><a href="#">Fees & Payments</a></li>
+                <li><a href="#">Returns & Refunds Policy</a></li>
+                <li><a href="#">Promotions Terms & Conditions</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>HELP</h4>
+            <ul>
+                <li><a href="#">Track Your Order</a></li>
+                <li><a href="#">Frequently Asked Questions</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Cancellations</a></li>
+                <li><a href="#">Payments</a></li>
+                <li><a href="#">Customer Care</a></li>
+                <li><a href="#">How Do I Redeem My Coupon</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Shop by</h4>
+            <ul>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Indie</a></li>
+                <li><a href="#">Stores</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Brand Directory</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Collections</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Follow us</h4>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram=AJIOlife</a></li>
+                <li><a href="#">Instagram=AJIO LUXE</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Pinterest</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<!-- <hr /> -->
+
+<div id="bottom-footer">
+
+    <div id="main">
+        <div>
+            <p>Payment Methods</p>
+        </div>
+        <div id="btm-left">
+            <p>Net Banking</p>
+            <p>Verified By Visa</p>
+            <p>Naster Card</p>
+            <p>CASH ON DELIVERY</p>
+            <p>Jio Money</p>
+        </div>
+    </div>
+    <div id="btm-right">
+        <p>Secure systems</p>
+        <p>256 BIT</p>
+    </div>
+
+    <div id="f-btns">
+        <button id="foot-btn">></button>
+        <button id="foot-btn1">...</button>
+        
+    </div>
 </body>
 </html>
 <script>
@@ -112,6 +218,7 @@
         category: "kurta",
         price: 895,
         strikedOffPrice: 3196,
+        cartQuantity:1
     },
     {
         imageURL:
@@ -122,6 +229,7 @@
         category: "kurta",
         price: 1199,
         strikedOffPrice: 2499,
+      cartQuantity:1
     },
     {
         imageURL:
@@ -132,6 +240,7 @@
         category: "kurta",
         price: 1199,
         strikedOffPrice: 2499,
+      cartQuantity:1
     },
     {
         imageURL:
@@ -142,6 +251,7 @@
         category: "kurta",
         price: 959,
         strikedOffPrice: 1599,
+        cartQuantity:1
     },
     {
         imageURL:
@@ -152,6 +262,7 @@
         category: "kurta",
         price: 1299,
         strikedOffPrice: 2499,
+      cartQuantity:1
     },
     {
         imageURL:
@@ -162,18 +273,24 @@
         category: "kurta",
         price: 895,
         strikedOffPrice: 3401,
+        cartQuantity:1
     }
 ]
- localStorage.setItem("CartItems",JSON.stringify(Data));
+    
   var cart = JSON.parse(localStorage.getItem("CartItems")) || [];
- var Quantity = 1;
+  if(cart.length==0){
+    localStorage.setItem("CartItems",JSON.stringify(Data));
+    window.location.href = "./emptyCart.html";
+  }
+  var totalAmount = 0;
+  calculateTotalCartAmount()
   display(cart);
 
   function display(cart){
     document.getElementById("left-Cart").innerHTML = "";
     cart.map(function(el,index){
     var div = document.createElement("div");
-    div.className = "product data";
+    div.className = "product-data";
     var imgDiv = document.createElement("div");
     var image = document.createElement("img");
     image.setAttribute("src",el.imageURL);
@@ -189,19 +306,29 @@
     var decre = document.createElement("button");
     decre.innerText = "-"
     decre.addEventListener("click",function(){
-        decrementValue(index);
+        el.cartQuantity =  decrementValue(index,el.cartQuantity);
+        quantity.value = el.cartQuantity
+        price.innerText = "Rs. :" + (+el.cartQuantity*el.price);
+        localStorage.setItem("CartItems",JSON.stringify(cart));
+        calculateTotalCartAmount()
     });
     var quantity = document.createElement("input");
-     quantity.innerHTML = totalQuantity;
+    quantity.value =el.cartQuantity;
+     quantity.style.width = "8%";
     
     var incre = document.createElement("button");
     incre.innerText = "+"
     incre.addEventListener("click",function(){
-        incrementValue(index);
+        el.cartQuantity =  incrementValue(index,el.cartQuantity);
+        quantity.value = el.cartQuantity
+        price.innerText = "Rs. :" + (+el.cartQuantity*el.price);
+        localStorage.setItem("CartItems",JSON.stringify(cart));
+        calculateTotalCartAmount()
+
     });
     divContainer.append(decre,quantity,incre);
      var price = document.createElement("p");
-     price.innerText = "Rs. :" + (+totalQuantity*el.price);
+     price.innerText = "Rs. :" + (+el.cartQuantity*el.price);
      
     
     var remove = document.createElement("button");
@@ -220,14 +347,43 @@
      localStorage.setItem("CartItems",JSON.stringify(cart));
      display(cart);
   }
-  function decrementValue(index){
-    Quantity = Quantity-1;
-    
-    if(Quantity===0){
-        cart.pop(index);
+  function decrementValue(index, itemQuantity){
+    --itemQuantity;
+    if(itemQuantity===0){
+        cart.splice(index,1); 
         localStorage.setItem("CartItems",JSON.stringify(cart));
         display(cart);
     }
+    return itemQuantity;
   }
+  function incrementValue(index, itemQuantity){
+    return ++itemQuantity;
+  }
+
+  function calculateTotalCartAmount(){
+    totalAmount=0;
+    let cart = JSON.parse(localStorage.getItem("CartItems"))
+    cart.forEach(element => {
+    totalAmount+=element.cartQuantity*element.price
+  });
+  document.getElementById('total-amount').innerText = `Rs. ${totalAmount}`
+  document.getElementById('bag-total').innerText = `Rs. ${totalAmount}`
+  }
+  document.getElementById('coupon-btn').addEventListener("click",function(){
+    applyCoupon()
+
+  })
+  function applyCoupon(){
+    var couponCode = document.getElementById('coupon-input').value
+    console.log("---cou--",couponCode)
+    if(couponCode=="FIRSTBUY"){
+        totalAmount=totalAmount-500;
+    }else if(couponCode == "AJIO_USER"){
+        totalAmount=totalAmount-250;
+    }
+    document.getElementById('total-amount').innerText = `Rs. ${totalAmount}`
+  document.getElementById('bag-total').innerText = `Rs. ${totalAmount}`
+  }
+ 
 
 </script>
