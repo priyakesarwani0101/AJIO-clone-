@@ -651,7 +651,17 @@ function display(data){
    
   var cartItem = JSON.parse(localStorage.getItem("CartItems")) || [];
   function addToCart(elem){
-     cartItem.push(elem);
+    var flag = true
+     cartItem.forEach(element => {
+      if(element.name==elem.name){
+        element.cartQuantity++;
+        flag=false
+      }
+     });
+     if(flag){
+      elem.cartQuantity++;
+      cartItem.push(elem);
+     }
      localStorage.setItem("CartItems",JSON.stringify(cartItem));
   }
 </script>

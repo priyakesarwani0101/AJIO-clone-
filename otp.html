@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP page</title>
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./formstyle.css">
+</head>
+<body>
+    <div class="mainAddress">
+        <form class = "addressForm">
+            <h1 style="text-align:center;">Please Enter Your OTP</h1>
+            
+            <input type="number" class="otp name" placeholder="Enter OTP (1212)" />
+            <input type="submit" id="submit" value="Verify with OTP" />
+          </form>
+        </div>
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit", submitOTP);
+
+function submitOTP(event){
+    event.preventDefault();
+
+    var otp = document.querySelector(".otp").value;
+
+    if(otp == 1212){
+        alert("Order Placed Successfully.")
+        alert("Payment Successful, redirecting to Home");
+        window.location.href = "index.html"
+
+    } else{
+        alert("Wrong OTP!")
+    }
+}
+</script>
