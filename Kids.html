@@ -135,7 +135,8 @@ a{
       background-color:rgb(123, 112, 41);
     }
     .manage{
-      margin: -8px;
+      margin: -12px;
+      margin-top: 3px;
     }
     #category{
       display: flex;
@@ -165,7 +166,7 @@ a{
     }
     #product{
       display: grid;
-      grid-template-columns: repeat(2,1fr);
+      grid-template-columns: repeat(3,1fr);
       gap: 15px;
       margin: auto;
       text-align: center;
@@ -184,6 +185,10 @@ a{
     }
     .offprice{
        text-decoration: line-through;
+       margin: 5px;
+    }
+    .boxer>h4{
+      margin: 4px;
     }
     </style>
 </head>
@@ -209,6 +214,7 @@ a{
         <div id="bag"><a href="Cart.html"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjHuCTCHiz7-sR9YwmlVHDZ0UXU-tcjDRIzmGlub9of64k0gsAJXe29kR-9Bpfj1f_YAg&usqp=CAU"></a></div>
      </div>
   </div>
+  </nav>
   </nav>
     <div id="parent">
       <div id="child1">
@@ -255,7 +261,7 @@ a{
         image_url:
         "https://assets.ajio.com/medias/sys_master/root/20210105/pM9q/5ff3642af997dd8c17b85554/rio_girls_coral_orange_printed_leggings_with_elasticated_waistband.jpg",
         brandName:"KG FRENDZ",
-        name:"Striped Leggings With Elasaticated WaistBand",
+        name:"Striped Leggings WaistBand",
         price:"199",
         strikedoffPrice:"299",
         filter:"GIRLS DRESSES",
@@ -282,7 +288,7 @@ a{
         image_url:
         "https://assets.ajio.com/medias/sys_master/root/hfd/h04/13440900857886/kb_team_spirit_green_mid-rise_bermuda_shorts_with_insert_pockets.jpg",
         brandName:"KB TEAM SPIRIT",
-        name:"Mid-Rise Bermuda Shorts With Insert Pocket",
+        name:"Mid-Rise Bermuda Shorts",
         price:"283",
         strikedoffPrice:"499",
         filter:"BOYS DRESSES",
@@ -310,7 +316,7 @@ a{
         image_url:
         "https://assets.ajio.com/medias/sys_master/root/20220804/Qpz9/62ebec9cf997dd03e222c8d8/inf_frendz_pink_shorts_%26_t-shirt_set_with_applique.jpg",
         brandName:"MOM'S LOVE",
-        name:"WShorts And T-Shirt Set With Applique",
+        name:"WShorts And T-Shirt Set",
         price:"584",
         strikedoffPrice:"649",
         filter:"BABY SETS",
@@ -319,7 +325,7 @@ a{
         image_url:
         "https://assets.ajio.com/medias/sys_master/root/20220221/vHhm/621388abaeb26921afa5754f/lee_cooper_red_slim_fit_cotton_shirt_with_patch_pocket.jpg",
         brandName:"LEE COPPER",
-        name:"Slim Fit Cotton Shirt With Patch Pocket",
+        name:"Slim Fit Cotton Shirt",
         price:"600",
         strikedoffPrice:"1199",
         filter:"BOYS DRESSES",
@@ -355,7 +361,7 @@ a{
         image_url:
         "https://assets.ajio.com/medias/sys_master/root/20220824/IrxA/63064d8eaeb26917619bc99a/tommy_hilfiger_petrol_blue_essential_brand_print_round-neck_t-shirt.jpg",
         brandName:"TOMMY HILFINGER",
-        name:"Essential Brand print Round-Neck T-Shirt",
+        name:"Essential Brand print T-Shirt",
         price:"749",
         strikedoffPrice:"999",
         filter: "BOYS DRESSES",
@@ -373,7 +379,7 @@ a{
         image_url:
         "https://assets.ajio.com/medias/sys_master/root/20210702/skVM/60df36abaeb269a9e335f371/youreka__youreka_unicorn_5_in_1_standing_easel.jpg",
         brandName:"YOUREKA",
-        name:"Youreka Unicorn5 in 1 Standing Easle",
+        name:"Youreka Unicorn5 Easle",
         price:"1599",
         
         filter:"TOYS",
@@ -391,7 +397,7 @@ a{
         image_url:
         "https://assets.ajio.com/medias/sys_master/root/20220210/ZQgG/62052d26aeb26921af927b5e/lee_cooper_orange_slim_fit_shirt_with_patch_pocket.jpg",
         brandName:"LEE COPPER",
-        name:"Slim Fit Cotton Shirt With Patch Pocket",
+        name:"Slim Fit Cotton Shirt",
         price:"490",
         strikedoffPrice:"999",
         filter:"BOYS DRESSES",
@@ -825,7 +831,7 @@ function display(data){
   document.querySelector("#product").innerText = "";
     data.map(function(elem){
     var box = document.createElement("div");
-    box.setAttribute("class","box");
+    box.setAttribute("class","boxer");
     var pic = document.createElement("img");
     pic.setAttribute("src",elem.image_url);
     pic.setAttribute("alt",elem.name);
