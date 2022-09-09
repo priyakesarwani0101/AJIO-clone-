@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids wear and Accessories</title>
+    <style>
+#navbar{
+            height:72px;
+            width:100%;
+            margin: auto;
+            border-top: 3px solid rgb(47,66,84);
+            display: flex;
+            /* position: fixed; */
+            /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+        }
+        #navbar-left{
+            height:65px;
+            width:25%;
+            border:1px solid transparent;
+            margin-left: 80px;
+    
+        }
+        #navbar-right{
+            height:100%;
+            width:60%;
+            border:1px solid transparent;
+            margin-right: 50px;
+            margin-left: 50px;
+            
+    
+        }
+        #right-upper{
+            height:50% ;
+            width:100%;
+            border:1px solid transparent;
+            display:flex;
+            justify-content: right;
+            gap:22px;
+            align-items: center;
+        }
+        #right-upper:hover{
+            cursor: pointer;
+        }
+        #right-lower{
+            height:50% ;
+            width:100%;
+            border:1px solid transparent;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: sans-serif;
+            font-size: 14px;
+            color:rgb(106,106,106);
+            margin-top: 3px;
+        }
+        #rl:hover{
+            font-weight: bold;
+            cursor: pointer;
+        }
+        #site-logo{
+            height:100%;
+            width:35%;
+            margin-left: 60px;
+        }
+        #navbar-button{
+            height:100%;
+            background-color: black;
+            color:white;
+            font-size: 12px;
+            font-family: sans-serif;
+            margin-right: 30px;
+            cursor: pointer;
+           
+        }
+        #navbar-input{
+            border-radius: 15px;
+            width: 250px;
+            height:25px;
+    
+        }
+        #ru{
+            font-size: 12px;
+            color:rgb(106,106,106);
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+        #navbar-image{
+            height:100px;
+            width:100%;
+            border:1px solid transparent;
+            margin-top: 10px;
+            
+        }
+        #navbar-img{
+            height:100%;
+            width:100%;
+        }
+        #bar-img{
+            height:100%;
+            width:4%;
+            cursor: pointer;
+            background-color: rgb(47,66,84);
+            color: white;
+        }
+    #parent{
+      display: flex;
+      gap: 20px;
+      margin-top: 15px;
+    }
+    #child1{
+      width: 20%;
+      position: fixed;
+    }
+    #child1 > h2{
+      text-align: center;
+      color: rgb(120, 58, 58);
+    }
+    .child2{
+      display: block;
+      width: 80%;
+      margin-left: 270px;
+    }
+    .box > img{
+      width: 100%;
+    }
+    .box{
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+    #btn{
+      margin-bottom: 10px;
+      width: 40%;
+      height: 25px;
+      color: aliceblue;
+      background-color: rgb(184, 170, 78);
+      border: none;
+    }
+    #btn:hover{
+      background-color:rgb(123, 112, 41);
+    }
+    .manage{
+      margin: -8px;
+    }
+    #category{
+      height: 80%;
+      margin: auto;
+      background-color: rgb(253, 246, 237);
+      border: 0.1px solid black;
+    }
+    #category > p{
+      cursor: default;
+      margin-left: 60px;
+      font-size: large;
+      color: rgb(26, 4, 48);
+      font-family: cursive;
+    }
+    #sortPrice{
+      border: none;
+      background-color: antiquewhite;
+    }
+    #pronav{
+      display: flex;
+      justify-content: space-around;
+      background-color: antiquewhite;
+    }
+    #product{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 15px;
+      margin: auto;
+      text-align: center;
+    }
+    .categorybox{
+      text-align: center;
+      height: 15%;
+      background-color: rgb(221, 209, 195);
+      border: 0.5px solid black;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      color: rgb(53, 9, 9);
+    }
+    #changeHead{
+      text-align: center;
+      color: rgb(1, 1, 71);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .offprice{
+       text-decoration: line-through;
+    }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id="navbar-left">
+            <img id="site-logo" src="https://assets.ajio.com/static/img/Ajio-Logo.svg" alt="">
+        </div>
+        <div id="navbar-right">
+            <div id="right-upper">
+                <a href=""><p id="ru">Sign In / Join AJIO</p></a>
+                <a href=""><p id="ru">Customer Care</p></a>
+                <button id="navbar-button">Visit AJIOLUXE</button>
+            </div>
+            <div id="right-lower">
+                <p id="rl">MEN</p>
+                <p id="rl">WOMEN</p>
+                <p id="rl">KIDS</p>
+                <p id="rl">INDIE</p>
+                <p id="rl">HOME AND KITCHEN</p>
+                <input id="navbar-input" type="text" placeholder="Search AJIO">
+                <img id="bar-img" src="https://i.pinimg.com/originals/fc/fa/0c/fcfa0c367d786deeaf42dec2fda70e47.png" alt="">
+                <img id="bar-img"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjHuCTCHiz7-sR9YwmlVHDZ0UXU-tcjDRIzmGlub9of64k0gsAJXe29kR-9Bpfj1f_YAg&usqp=CAU" alt="">
+            </div>
+        </div>
+        </div>
+    <div id="parent">
+      <div id="child1">
+        <div class="categorybox">
+          <h2>Category :</h2>
+        </div>
+        <div id="category">
+          <!-- <button onclick="shirt()"></button> -->
+          <p onclick="defaul()"> * All</p>
+          <p onclick="boys()"> * Boys Dresses</p>
+         <p onclick="girls()">* Girls Dresses</p>
+         <p onclick="toy()">* Toys</p>
+         <p onclick="baby()">* Baby sets</p>
+        </div>
+      </div>
+      <div class="child2">
+        <div id="pronav">
+          <select id="sortPrice" onchange="handlePriceSort()">
+            <option value="">Sort by Price</option>
+            <option value="high">High to Low</option>
+            <option value="low">Low to High</option>
+          </select>
+          <h4><span id="count"></span> Items found</h4>
+        </div>
+        <h2 id="changeHead">Womens wear & Accessories</h2>
+        <div id="product"></div>
+      </div>
+    </div>
+</body>
+</html>
+<script>
+      var KidsData = [
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220511/wefU/627b4642f997dd03e2a59432/hellcat_navy_blue_%26_pink_pack_of_2_striped_hooded_t-shirts.jpg",
+        brandName:"HELLCAT",
+        name:"Pack Of 2 Striped Hooded T-Shirt",
+        price:"598",
+        strikedoffPrice:"1999",
+        filter:"BOYS DRESSES",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20210105/pM9q/5ff3642af997dd8c17b85554/rio_girls_coral_orange_printed_leggings_with_elasticated_waistband.jpg",
+        brandName:"KG FRENDZ",
+        name:"Striped Leggings With Elasaticated WaistBand",
+        price:"199",
+        strikedoffPrice:"299",
+        filter:"GIRLS DRESSES",
+      }, 
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220630/9m9F/62bcbb23f997dd03e2aac15c/lego__31129_majestic_tiger_building_blocks.jpg",
+        brandName:"LEGO",
+        name:"31129 Majestic Tiger Building Block",
+        price:"6499",
+        
+        filter:"TOYS",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220822/9FIb/63039be2aeb26917618ea7e9/mom%27s_love_pink_%26_white_quilted_sweatshirt_%26_pants_set.jpg",
+        brandName:"MOM'S LOVE",
+        name:"Quitlted Sweatshirt & Pant Set ",
+        price:"344",
+        strikedoffPrice:"999",
+        filter:"BABY SETS",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/hfd/h04/13440900857886/kb_team_spirit_green_mid-rise_bermuda_shorts_with_insert_pockets.jpg",
+        brandName:"KB TEAM SPIRIT",
+        name:"Mid-Rise Bermuda Shorts With Insert Pocket",
+        price:"283",
+        strikedoffPrice:"499",
+        filter:"BOYS DRESSES",
+      },
+     
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220602/Aq3F/6298d797aeb26921af082cb4/pink_n_blue_pink_geometric_knitted_high-neck_pullover.jpg",
+        brandName:"PINK N BLUE",
+        name:"Geometric Kneeted High Neck Pullover",
+        price:"299",
+        strikedoffPrice:"499",
+        filter:"GIRLS DRESSES",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20210611/gOgq/60c264e7f997ddb312c55aa8/lego__41916_extra_dots_series_2.jpg",
+        brandName:"LEGO",
+        name:"41916 Extra Dots Series 2",
+        price:"499",
+        
+        filter:"TOYS",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220804/Qpz9/62ebec9cf997dd03e222c8d8/inf_frendz_pink_shorts_%26_t-shirt_set_with_applique.jpg",
+        brandName:"MOM'S LOVE",
+        name:"WShorts And T-Shirt Set With Applique",
+        price:"584",
+        strikedoffPrice:"649",
+        filter:"BABY SETS",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220221/vHhm/621388abaeb26921afa5754f/lee_cooper_red_slim_fit_cotton_shirt_with_patch_pocket.jpg",
+        brandName:"LEE COPPER",
+        name:"Slim Fit Cotton Shirt With Patch Pocket",
+        price:"600",
+        strikedoffPrice:"1199",
+        filter:"BOYS DRESSES",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220812/vGAx/62f58d18f997dd03e2418a66/pspeaches_yellow_floral_print_tiered_skirt.jpg",
+        brandName:"KG FRENDZ",
+        name:"Floral Printed Tired Shirt",
+        price:"894",
+        strikedoffPrice:"1399",
+        filter:"GIRLS DRESSES",
+      },  
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220630/rtje/62bca0ccaeb26921af522446/carvaan__carvaan_mini_2.0_kids_electronics_accessories.jpg",
+        brandName:"CARVAAN",
+        name:"Kids Electronics Assesories Box",
+        price:"2999",
+        
+        filter:"TOYS",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220721/Sw3z/62d852d5f997dd03e2e4074a/inf_frendz_white_%26_pink_dungaree_shorts_with_shirt.jpg",
+        brandName:"INF FRENDZ",
+        name:"Dungaree Shorts With Shirts",
+        price:"809",
+        strikedoffPrice:"999",
+        filter:"BABY SETS",
+      }, 
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220824/IrxA/63064d8eaeb26917619bc99a/tommy_hilfiger_petrol_blue_essential_brand_print_round-neck_t-shirt.jpg",
+        brandName:"TOMMY HILFINGER",
+        name:"Essential Brand print Round-Neck T-Shirt",
+        price:"749",
+        strikedoffPrice:"999",
+        filter: "BOYS DRESSES",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220114/D3zn/61e08d46aeb2695cdd14202b/aarika_girls_ethnic_black_indian_fit_and_flare_dress.jpg",
+        brandName:"HIGH FAME",
+        name:"Indian Fit And Flare Dress",
+        price:"387",
+        strikedoffPrice:"999",
+        filter:"GIRLS DRESSES",
+      }, 
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20210702/skVM/60df36abaeb269a9e335f371/youreka__youreka_unicorn_5_in_1_standing_easel.jpg",
+        brandName:"YOUREKA",
+        name:"Youreka Unicorn5 in 1 Standing Easle",
+        price:"1599",
+        
+        filter:"TOYS",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220721/3xPh/62d97104aeb26921af8ca95d/inf_frendz_light_pink_striped_top_%26_skirt_set_with_kitty_applique.jpg",
+        brandName:"INF FRENDZ",
+        name:"Stripped Top ans Skirt set",
+        price:"589",
+        strikedoffPrice:"649",
+        filter:"BABY SETS",
+      }, 
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220210/ZQgG/62052d26aeb26921af927b5e/lee_cooper_orange_slim_fit_shirt_with_patch_pocket.jpg",
+        brandName:"LEE COPPER",
+        name:"Slim Fit Cotton Shirt With Patch Pocket",
+        price:"490",
+        strikedoffPrice:"999",
+        filter:"BOYS DRESSES",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20211207/A1mx/61ae7c2daeb2690110f7f4d9/kg_frendz_blue_embroidered_a-line_dress_with_belt.jpg",
+        brandName:"KG FRENDZ",
+        name:"A line Dress With Belt",
+        price:"559",
+        strikedoffPrice:"899",
+        filter:"GIRLS DRESSES",
+      }, 
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20210619/z15i/60ccea50aeb269a9e3ef188e/jada__marvel_black_widow_1966_chevy.jpg",
+        brandName:"JADA",
+        name:"Marvel Black Women 1996 Chevy",
+        price:"2999",
+        strikedoffPrice:"3999",
+        filter:"TOYS",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220215/5jGp/620bc085aeb26921af99dffc/mom%27s_love_pink_textured_hoodie_%26_joggers_set.jpg",
+        brandName:"MOM'S LOVE",
+        name:"Textured Hoodie and Joggers Set",
+        price:"909",
+        strikedoffPrice:"1299",
+        filter:"BABY SETS",
+      }, 
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/h85/h52/13250108719134/kb_team_spirit_blue_mid-rise_relaxed_fit_jeans.jpg",
+        brandName:"KB TEAM SPIRIT",
+        name:"Mid-Rise Relaxed Fit Jeans",
+        price:"354",
+        strikedoffPrice:"499",
+        filter:"BOYS DRESSES",
+      }, 
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20210824/W1be/6124e8a17cdb8cb8240472e1/kg_frendz_multicoloured_floral_print_a-line_skirt_with_patch_pockets.jpg",
+        brandName:"KG FRENDZ",
+        name:" Floral Printed Skirt ",
+        price:"196",
+        strikedoffPrice:"399",
+        filter:"GIRLS DRESSES",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20210924/hs8B/614cdaa5f997ddce89dcbbd4/star_wars__star_wars_the_black_series_titanium_series.jpg",
+        brandName:"STAR WARS",
+        name:"Star Wars The Black Series Titanium",
+        price:"1299",
+        strikedoffPrice:"3999",
+        filter:"TOYS",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220728/50s8/62e29fd7aeb26921afa70984/mom%27s_love_maroon_%26_white_striped_t-shirt_with_shorts_set.jpg",
+        brandName:"MOM'S LOVE",
+        name:"Striped T-Shirt With Short Set",
+        price:"333",
+        strikedoffPrice:"666",
+        filter:"BABY SETS",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220602/Fy57/6298e2ddf997dd03e25cdf27/pink_n_blue_sunshine_yellow_graphic_print_round-neck_t-shirt.jpg",
+        brandName:"PINK N BLUE",
+        name:"Graphic Print Round-Neck T-Shirt",
+        price:"100",
+        strikedoffPrice:"199",
+        filter:"BOYS DRESSES",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20210527/3xRi/60afbae9f997ddb312ab8626/kg_frendz_navy_blue_ladybug_print_a-line_skirt.jpg",
+        brandName:"KG FRENDZ",
+        name:"Ladybug Printed A-Line Skirt ",
+        price:"194",
+        strikedoffPrice:"399",
+        filter:"GIRLS DRESSES",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/he2/h02/16342115319838/smiggle__zip-around_mermaid_pencil_case.jpg",
+        brandName:"SMIGGLE",
+        name:"Zip Around Mermaid Pencil Case",
+        price:"999",
+        strikedoffPrice:"1299",
+        filter:"TOYS",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220803/y98t/62ea922ff997dd03e21f45ad/mom%27s_love_maroon_%26_white_printed_t-shirt_%26_pants_set_with_suspenders_%26_tie.jpg",
+        brandName:"MOM'S LOVE",
+        name:"Printed T-Shirt With Pants & Tie",
+        price:"529",
+        strikedoffPrice:"999",
+        filter:"BABY SETS",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220429/SOMI/626c17bdf997dd03e28b3b49/lee_cooper_indigo_washed_mid-rise_shorts.jpg",
+        brandName:"LEE COPPER",
+        name:"Washed Mid-Rise Shorts ",
+        price:"659",
+        strikedoffPrice:"1099",
+        filter:"BOYS DRESSES",
+      },
+       
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20210809/iGZC/6111453d7cdb8cb824ef583b/kg_frendz_coral_pink_zip-front_hooded_puffer_jacket.jpg",
+        brandName:"KG FRENDZ",
+        name:"Zip Front Hooded Puffed Jacket",
+        price:"599",
+        strikedoffPrice:"999",
+        filter:"GIRLS DRESSES",
+      }, 
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220630/vtRV/62bc9dcff997dd03e2a9eb19/karma__magic_drawing_board.jpg",
+        brandName:"KARMA",
+        name:"Magic Drawing Board",
+        price:"1299",
+        strikedoffPrice:"1299",
+        filter:"TOYS",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220103/9cBH/61d31590f997dd66230e05e8/mom%27s_love_navy_blue_printed_sweatshirt_%26_joggers_set.jpg",
+        brandName:"MOM'S LOVE",
+        name:"Printed Sweatwear & Jogger Set",
+        price:"409",
+        strikedoffPrice:"599",
+        filter:"BABY SETS",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220511/Gd5z/627b48d4aeb26921af64e565/hellcat_green_graphic_print_crew-neck_t-shirt.jpg",
+        brandName:"HELLCAT",
+        name:"Graphic Print Crew-Neck T-Shirt",
+        price:"498",
+        strikedoffPrice:"999",
+        filter:"BOYS DRESSES",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20211210/XBmd/61b28ec8aeb2690110075a71/kg_frendz_white_striped_leggings_with_elasticated_waist.jpg",
+        brandName:"KG FRENDZ",
+        name:"Striped Leggings With Elasaticated Waist",
+        price:"199",
+        strikedoffPrice:"299",
+        filter:"GIRLS DRESSES",
+      }, 
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220630/9m9F/62bcbb23f997dd03e2aac15c/lego__31129_majestic_tiger_building_blocks.jpg",
+        brandName:"LEGO",
+        name:"31129 Majestic Tiger Building Block",
+        price:"6499",
+        
+        filter:"TOYS",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20210831/qbiZ/612e296ef997ddce89b4a61c/inf_frendz_multicoloured_graphic_print_romper_with_beanie_%26_bib_set.jpg",
+        brandName:"INF FRENDZ",
+        name:"Graphic Printed Romper With Beanie & Bib Set",
+        price:"200",
+        strikedoffPrice:"349",
+        filter:"BABY SETS",
+      }, 
+      {
+        image_url:
+    "https://assets.ajio.com/medias/sys_master/root/20220824/JjkJ/63060f7cf997dd394c178d2a/bonkids_white_mickey_mouse_print_crew-neck_t-shirt.jpg",
+        brandName:"BONKIDS",
+        name:"Mickey Mouse Print Crew-Neck T-Shirt",
+        price:"498",
+        strikedoffPrice:"999",
+        filter:"BOYS DRESSES",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20211006/FIKS/615d4629f997ddce89029fd6/kg_frendz_pink_novelty_print_winter_leggings.jpg",
+        brandName:"KG FRENDZ",
+        name:"Novality Printed Winter Leggings",
+        price:"149",
+        strikedoffPrice:"249",
+        filter:"GIRLS DRESSES",
+      }, 
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20210716/jI2Q/60f09b8bf997ddb31228a463/funskool__fun_pack_-_12_colours.jpg",
+        brandName:"FUN SKOOL",
+        name:"fun Pack-12 colors",
+        price:"249",
+        
+        filter:"TOYS",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20210428/q2dL/60895b8bf997dd7b64c6a71e/inf_frendz_blue_printed_shirt_with_waistcoat.jpg",
+        brandName:"INF TREANDS",
+        name:"Printed Shirt With WaistCoat",
+        price:"449",
+        strikedoffPrice:"899",
+        filter:"BABY SETS",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20210819/UENs/611e511eaeb269a268785ab5/yb_dnmx_blue_shirt_with_buttoned_welt_pocket.jpg",
+        brandName:"TB DNMX",
+        name:"Shirt With Buttoned Welt Pocket",
+        price:"450",
+        strikedoffPrice:"899",
+        filter:"BOYS DRESSES",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20210809/ALG7/6111435d7cdb8cb824ef52c8/kg_frendz_pink_zip-front_hooded_puffer_jacket.jpg",
+        brandName:"KG FRENDZ",
+        name:"Zip Front Hooded Puffed Jacket",
+        price:"499",
+        strikedoffPrice:"999",
+        filter:"GIRLS DRESSES",
+      },
+      
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20210618/A31c/60cb9c0eaeb269a9e3ed79b1/funvention__bi-plane_diy_mechanical_model.jpg",
+        brandName:"FUNVENTION",
+        name:"Diy Plane Mechanical Model",
+        price:"1499",
+        
+        filter:"TOYS",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220114/T7cF/61e1a2d4f997dd662322485a/inf_frendz_blue_striped_dungarees_with_t-shirt.jpg",
+        brandName:"INF TREANDS",
+        name:"Striped Durgarees With T-Shirts",
+        price:"299",
+        strikedoffPrice:"499",
+        filter:"BABY SETS",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/h21/h9b/13250105770014/kb_team_spirit_black_mid-rise_relaxed_fit_jeans.jpg",
+        brandName:"KB TEAM SPIRIT",
+        name:"Mid-Rise Relaxed Fit Jeans",
+        price:"354",
+        strikedoffPrice:"499",
+        filter:"BOYS DRESSES",
+      }, 
+      
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20211008/KnaW/616057d1aeb2692b85bb9dd5/kg_frendz_navy_blue_%26_red_printed_skater_dress.jpg",
+        brandName:"KG FRENDZ",
+        name:"Printed Skater Dress",
+        price:"305",
+        strikedoffPrice:"599",
+        filter:"GIRLS DRESSES",
+      }, 
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220630/EQoy/62bcbcc3aeb26921af52fc55/lego__60314_ice_cream_truck_building_blocks.jpg",
+        brandName:"LEGO",
+        name:"61340 Ice Cream Truck Building Block",
+        price:"3499",
+        
+        filter:"TOYS",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220210/CU44/62052bdaaeb26921af9274c1/inf_frendz_blue_%26_pink_striped_suit_set_with_bow_tie.jpg",
+        brandName:"INF TREANDS",
+        name:"Striped Suit With Bow Tie",
+        price:"787",
+        strikedoffPrice:"1049",
+        filter:"BABY SETS",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220406/79eb/624c9537aeb26921af0cf2b5/lee_cooper_tint_black_flat-front_slim_fit_jeans.jpg",
+        brandName:"KB TEAM SPIRIT",
+        name:"Mid-Rise Relaxed Fit Jeans",
+        price:"354",
+        strikedoffPrice:"499",
+        filter:"BOYS DRESSES",
+      }, 
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220810/hQ7X/62f359b9f997dd03e237eeba/pink_chick_navy_ruffled_fit_%26_flare_dress.jpg",
+        brandName:"PINK CHICK",
+        name:"Ruffled Fit And Flare Dress",
+        price:"1560",
+        strikedoffPrice:"3000",
+        filter:"GIRLS DRESSES",
+      }, 
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220826/iZas/6308e261f997dd394c2835e6/mom%27s_love_multicoloured_printed_pants_%26_t-shirt_set.jpg",
+        brandName:"MOM'S LOVE",
+        name:"Printed Pants & T-Shirt Set",
+        price:"349",
+        strikedoffPrice:"578",
+        filter:"BABY SETS",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/hab/h76/13473319288862/kb_team_spirit_red_mid-rise_bermuda_shorts_with_insert_pockets.jpg",
+        brandName:"KB TEAM SPIRIT",
+        name:"Mid-Rise Bermuda Shorts With Insert Pocket",
+        price:"283",
+        strikedoffPrice:"499",
+        filter:"BOYS DRESSES",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20211217/ez7y/61bcbb0eaeb2690110115220/kg_frendz_purple_butterfly_print_fit_%26_flare_dress_with_belt.jpg",
+        brandName:"KG FRENDZ",
+        name:" Butterfly Print Dress ",
+        price:"559",
+        strikedoffPrice:"999",
+        filter:"GIRLS DRESSES",
+      }, 
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/hfd/h80/16931897409566/handycrafts__funskool_dreamcatcher_craft_kit.jpg",
+        brandName:"HANDYCRAFTS",
+        name:"FunSkool Dream Catcher Craft Kit",
+        price:"399",
+        
+        filter:"TOYS",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220818/Cvga/62fe5b83aeb269176183dce7/mom%27s_love_navy_blue_printed_t-shirt_%26_joggers_set.jpg",
+        brandName:"MOM'S LOVE",
+        name:"Printed T-Shirt & Jogger Set",
+        price:"329",
+        strikedoffPrice:"549",
+        filter:"BABY SETS",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20211223/gHuI/61c48f9daeb269011018f8db/lee_cooper_blue_striped_shirt_with_patch_pocket.jpg",
+        brandName:"LEE COPPER",
+        name:"Striped Shirt With Patch Pocket",
+        price:"600",
+        strikedoffPrice:"1299",
+        filter:"BOYS DRESSES",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220623/bf49/62b4aa3daeb26921af434efd/point_cove_navy_blue_sunburst_printed_flared_skirt.jpg",
+        brandName:"KG FRENDZ",
+        name:"Sunburst Printed Flared Skirt ",
+        price:"494",
+        strikedoffPrice:"599",
+        filter:"GIRLS DRESSES",
+      },
+      
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20201005/yeVF/5f7b3ac6aeb269d563d18db9/marvel__avengers_endgame_infinity_gauntlet_electronic_fist.jpg",
+        brandName:"MARVEL",
+        name:"Avengers Endgame Infinity GauntLet Electronics",
+        price:"1999",
+        strikedoffPrice:"2999",
+        filter:"TOYS",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220103/Asod/61d31074f997dd66230dec0d/mom%27s_love_red_printed_hoodie_%26_joggers_set.jpg",
+        brandName:"MOM'S LOVE",
+        name:"Printed Hoodie & Jogger Set",
+        price:"499",
+        strikedoffPrice:"749",
+        filter:"BABY SETS",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20210709/HBjo/60e753aff997ddb312217025/yb_dnmx_white_ditsy_print_shirt_with_band_collar.jpg",
+        brandName:"TB DNMX",
+        name:"Disty Print Shirt With Band Collar",
+        price:"450",
+        strikedoffPrice:"899",
+        filter:"BOYS DRESSES",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220207/XyRX/620110e4f997dd03e2c2b4af/kg_frendz_pink_lace_tiered_a-line_skirt.jpg",
+        brandName:"KG FRENDZ",
+        name:"Lace-Tired Printed Skirt ",
+        price:"294",
+        strikedoffPrice:"399",
+        filter:"GIRLS DRESSES",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220630/SDlp/62bcb594f997dd03e2aa5cf3/fuzzbuzz__unicorn_school_bagpack.jpg",
+        brandName:"FUZZ BUZZ",
+        name:"Unicorn School BagPack",
+        price:"829",
+        strikedoffPrice:"1299",
+        filter:"TOYS",
+      },
+      {
+        image_url:
+        "https://assets.ajio.com/medias/sys_master/root/20220801/KdQj/62e7fa70f997dd03e2134674/mom%27s_love_black_%26_white_3-piece_striped_cotton_suit_set.jpg",
+        brandName:"MOM'S LOVE",
+        name:"3-piece Stripped Cotton Suit Set",
+        price:"584",
+        strikedoffPrice:"899",
+        filter:"BABY SETS",
+      },  
+    ]
+
+    display(KidsData);
+  var count = KidsData.length;
+  document.getElementById("count").innerText = count;
+
+function display(data){
+  document.querySelector("#product").innerText = "";
+    data.map(function(elem){
+    var box = document.createElement("div");
+    box.setAttribute("class","box");
+    var pic = document.createElement("img");
+    pic.setAttribute("src",elem.image_url);
+    pic.setAttribute("alt",elem.name);
+    var name = document.createElement("h4");
+    name.innerText = elem.name;
+    var price = document.createElement("p");
+    price.innerText =  "₹ "+elem.price;
+    price.setAttribute("class","manage")
+    var strickedprice = document.createElement("p");
+    strickedprice.innerText = "MRP₹ "+elem.strikedoffPrice;
+    strickedprice.setAttribute("class","offprice");
+    var btn = document.createElement("button");
+    btn.innerText = "Add to Cart";
+    btn.setAttribute("id","btn")
+    btn.addEventListener("click",function(){
+      addToCart(elem);
+    })
+    box.append(pic,name,price,strickedprice,btn);
+    document.getElementById("product").append(box);
+   })
+  }
+
+  function defaul(){
+     display(KidsData);
+     count = KidsData.length;
+     document.getElementById("count").innerText = count;
+     document.getElementById("changeHead").innerText = "Kids Wear & Accessories"
+  }
+
+   function boys(){
+    var filter = KidsData.filter(function(elem){
+      return elem.filter === "BOYS DRESSES";
+    });
+     display(filter);
+     count = filter.length;
+     document.getElementById("count").innerText = count;
+     document.getElementById("changeHead").innerText = "Boys Dresses"
+
+   }
+
+   function girls(){
+    var filter = KidsData.filter(function(elem){
+      return elem.filter === "GIRLS DRESSES";
+    });
+     display(filter);
+     count = filter.length;
+     document.getElementById("count").innerText = count;
+     document.getElementById("changeHead").innerText = "Girls Dresses"
+   }
+
+   function toy(){
+    var filter = KidsData.filter(function(elem){
+      return elem.filter === "TOYS";
+    });
+     display(filter);
+     count = filter.length;
+     document.getElementById("count").innerText = count;
+     document.getElementById("changeHead").innerText = "Kids Toys"
+     
+   }
+
+   function baby(){
+    var filter = KidsData.filter(function(elem){
+      return elem.filter === "BABY SETS";
+    });
+     display(filter);
+     count = filter.length;
+     document.getElementById("count").innerText = count;
+     document.getElementById("changeHead").innerText = "Baby Sets"
+   }
+
+   function handlePriceSort(){
+    var PriceOrder = document.getElementById("sortPrice").value;
+      if(PriceOrder === "high"){
+         KidsData.sort(function(a,b){
+          return b.price - a.price;
+        });
+        display(KidsData);
+      }
+      if(PriceOrder === "low"){
+        KidsData.sort(function(a,b){
+          return a.price - b.price;
+        });
+        display(KidsData);
+   }
+  }
+   
+  var cartItem = JSON.parse(localStorage.getItem("CartItems")) || [];
+  function addToCart(elem){
+     cartItem.push(elem);
+     localStorage.setItem("CartItems",JSON.stringify(cartItem));
+  }
+</script>

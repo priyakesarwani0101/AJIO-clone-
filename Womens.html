@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women wear & Accessories</title>
+    <style>
+ #navbar{
+            height:72px;
+            width:100%;
+            margin: auto;
+            border-top: 3px solid rgb(47,66,84);
+            display: flex;
+            /* position: fixed; */
+            /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    
+        }
+        #navbar-left{
+            height:65px;
+            width:25%;
+            border:1px solid transparent;
+            margin-left: 80px;
+    
+        }
+        #navbar-right{
+            height:100%;
+            width:60%;
+            border:1px solid transparent;
+            margin-right: 50px;
+            margin-left: 50px;
+            
+    
+        }
+        #right-upper{
+            height:50% ;
+            width:100%;
+            border:1px solid transparent;
+            display:flex;
+            justify-content: right;
+            gap:22px;
+            align-items: center;
+        }
+        #right-upper:hover{
+            cursor: pointer;
+        }
+        #right-lower{
+            height:50% ;
+            width:100%;
+            border:1px solid transparent;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: sans-serif;
+            font-size: 14px;
+            color:rgb(106,106,106);
+            margin-top: 3px;
+        }
+        #rl:hover{
+            font-weight: bold;
+            cursor: pointer;
+        }
+        #site-logo{
+            height:100%;
+            width:35%;
+            margin-left: 60px;
+        }
+        #navbar-button{
+            height:100%;
+            background-color: black;
+            color:white;
+            font-size: 12px;
+            font-family: sans-serif;
+            margin-right: 30px;
+            cursor: pointer;
+           
+        }
+        #navbar-input{
+            border-radius: 15px;
+            width: 250px;
+            height:25px;
+    
+        }
+        #ru{
+            font-size: 12px;
+            color:rgb(106,106,106);
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+        #navbar-image{
+            height:100px;
+            width:100%;
+            border:1px solid transparent;
+            margin-top: 10px;
+            
+        }
+        #navbar-img{
+            height:100%;
+            width:100%;
+        }
+        #bar-img{
+            height:100%;
+            width:4%;
+            cursor: pointer;
+            background-color: rgb(47,66,84);
+            color: white;
+        }
+    #parent{
+      display: flex;
+      gap: 20px;
+      margin-top: 15px;
+    }
+    #child1{
+      width: 20%;
+      position: fixed;
+    }
+    #child1 > h2{
+      text-align: center;
+      color: rgb(120, 58, 58);
+    }
+    .child2{
+      display: block;
+      width: 80%;
+      margin-left: 270px;
+    }
+    .box > img{
+      width: 100%;
+    }
+    .box{
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+    #btn{
+      margin-bottom: 10px;
+      width: 40%;
+      height: 25px;
+      color: aliceblue;
+      background-color: rgb(184, 170, 78);
+      border: none;
+    }
+    #btn:hover{
+      background-color:rgb(123, 112, 41);
+    }
+    .manage{
+      margin: -8px;
+    }
+    #category{
+      height: 80%;
+      margin: auto;
+      background-color: rgb(253, 246, 237);
+      border: 0.1px solid black;
+    }
+    #category > p{
+      cursor: default;
+      margin-left: 60px;
+      font-size: large;
+      color: rgb(26, 4, 48);
+      font-family: cursive;
+    }
+    #sortPrice{
+      border: none;
+      background-color: antiquewhite;
+    }
+    #pronav{
+      display: flex;
+      justify-content: space-around;
+      background-color: antiquewhite;
+    }
+    #product{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 15px;
+      margin: auto;
+      text-align: center;
+    }
+    .categorybox{
+      text-align: center;
+      height: 15%;
+      background-color: rgb(221, 209, 195);
+      border: 0.5px solid black;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      color: rgb(53, 9, 9);
+    }
+    #changeHead{
+      text-align: center;
+      color: rgb(1, 1, 71);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .offprice{
+       text-decoration: line-through;
+    }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id="navbar-left">
+            <img id="site-logo" src="https://assets.ajio.com/static/img/Ajio-Logo.svg" alt="">
+        </div>
+        <div id="navbar-right">
+            <div id="right-upper">
+                <a href=""><p id="ru">Sign In / Join AJIO</p></a>
+                <a href=""><p id="ru">Customer Care</p></a>
+                <button id="navbar-button">Visit AJIOLUXE</button>
+            </div>
+            <div id="right-lower">
+                <p id="rl">MEN</p>
+                <p id="rl">WOMEN</p>
+                <p id="rl">KIDS</p>
+                <p id="rl">INDIE</p>
+                <p id="rl">HOME AND KITCHEN</p>
+                <input id="navbar-input" type="text" placeholder="Search AJIO">
+                <img id="bar-img" src="https://i.pinimg.com/originals/fc/fa/0c/fcfa0c367d786deeaf42dec2fda70e47.png" alt="">
+                <img id="bar-img"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjHuCTCHiz7-sR9YwmlVHDZ0UXU-tcjDRIzmGlub9of64k0gsAJXe29kR-9Bpfj1f_YAg&usqp=CAU" alt="">
+            </div>
+        </div>
+        </div>
+    <div id="parent">
+      <div id="child1">
+        <div class="categorybox">
+          <h2>Category :</h2>
+        </div>
+        <div id="category">
+          <!-- <button onclick="shirt()"></button> -->
+          <p onclick="defaul()"> * All</p>
+          <p onclick="kurta()"> * Kurti</p>
+         <p onclick="saree()">* Saree</p>
+         <p onclick="makeup()">* Makeup</p>
+         <p onclick="jewellary()">* Jewellery</p>
+         <p onclick="footwear()">* Footwear</p>
+        </div>
+      </div>
+      <div class="child2">
+        <div id="pronav">
+          <select id="sortPrice" onchange="handlePriceSort()">
+            <option value="">Sort by Price</option>
+            <option value="high">High to Low</option>
+            <option value="low">Low to High</option>
+          </select>
+          <h4><span id="count"></span> Items found</h4>
+        </div>
+        <h2 id="changeHead">Womens wear & Accessories</h2>
+        <div id="product"></div>
+      </div>
+    </div>
+</body>
+</html>
+<script>
+      var Womens_Data = [
+    {
+            image: "https://assets.ajio.com/medias/sys_master/root/20210814/Z7FO/6116bcb67cdb8cb824f74850/-473Wx593H-4912365350-black-MODEL.jpg ",
+            name: "10hr Smudge-Proof Khole Kajal Intense Black",
+            price:"75",
+            strickedOffPrice:"149",
+            category:"makeup",
+            
+        },
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20220721/XQyH/62d9915ef997dd03e2e83620/-473Wx593H-6005608930-multi-MODEL.jpg ",
+            name: "Platinum-Plated Crystal-Studded Bangle",
+            price:"275",
+            strickedOffPrice:"2599",
+            category:"jewellary",
+        },
+        {
+            image: " https://assets.ajio.com/medias/sys_master/root/20210713/6wvo/60ecb8a6aeb269a9e340a8ff/-473Wx593H-462623507-white-MODEL.jpg",
+            name: "Striped Cotton Saree",
+            price:"1240",
+            strickedOffPrice:"1899",
+            category:"saree",
+        },
+       {
+            image: "https://assets.ajio.com/medias/sys_master/root/20210216/hiF7/602ada67aeb2696981663995/-473Wx593H-460818208-mint-MODEL.jpg ",
+            name: "Alice Low-Top Lace-Up Running Shoes",
+            price:"935",
+            strickedOffPrice:"1299",
+            category:"footwear",
+        },
+        
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20220627/ZAJY/62b9c389aeb26921af486e22/cora_green_embellished_a-line_tunic.jpg ",
+            name: "Embellished A-line Tunic",
+            price:"720",
+            strickedOffPrice:"1599",
+            category:"kurta",
+        },
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20211211/DCaO/61b3be57aeb269011008683c/-473Wx593H-463482759-grey-MODEL3.jpg ",
+            name: "Solid T-strap Slipper",
+            price:"333",
+            strickedOffPrice:"599",
+            category:"footwear",
+        },
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20210403/2S0h/6068b10eaeb269a9e336faf9/kimayra_peach_floral_print_flared_kurta.jpg ",
+            name: "Floral Print Flared Kurta",
+            price:"749",
+            strickedOffPrice:"1999",
+            category:"kurta",
+        },
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20220111/H8p6/61dd9cedf997dd66231b481d/-473Wx593H-4900325290-ivory-MODEL.jpg ",
+            name: "Touch & Glow Powder - Ivory Matte",
+            price:"455",
+            strickedOffPrice:"590",
+            category:"makeup",
+        },
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20220730/npi8/62e4682aaeb26921afae7928/anubhutee_green_floral_print_straight_kurta_set.jpg ",
+            name: "Floral Print Straight Kurta Set",
+            price:"2160",
+            strickedOffPrice:"4799",
+            category:"kurta",
+        },
+       
+        {
+            image: " https://assets.ajio.com/medias/sys_master/root/20210924/oUaT/614ce9a6f997ddce89dcfcfb/-473Wx593H-6005607000-multi-MODEL.jpg",
+            name: "9919ER Set of 6 Oxidised Earrings",
+            price:"200",
+            strickedOffPrice:"1999",
+            category:"jewellary",
+        },
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20220224/690n/62176fc6aeb26921afb52a03/-473Wx593H-463890944-burgundy-MODEL.jpg ",
+            name: "Floral Woven Straight Kurta Set",
+            price:"1249",
+            strickedOffPrice:"3500",
+            category:"kurta",
+        },
+        
+        {
+            image: " https://assets.ajio.com/medias/sys_master/root/20220128/nbId/61f30e4bf997dd662342433e/-473Wx593H-4915182650-32cortado-MODEL.jpg",
+            name: "Goddess of Flawless SPF30+ BB Cream",
+            price:"629",
+            strickedOffPrice:"699",
+            category:"makeup",
+        },
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20220607/MY99/629f6a53f997dd03e268cc6f/-473Wx593H-469229836-white-MODEL.jpg ",
+            name: "Reptilian Pattern Block-Heeled Platforms",
+            price:"992",
+            strickedOffPrice:"3199",
+            category:"footwear",
+        },
+       
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20220624/myCx/62b57d29f997dd03e29ca669/-473Wx593H-469171227-nude-MODEL.jpg ",
+            name: "Embellished Chunky Heeled Sandals",
+            price:"990",
+            strickedOffPrice:"2100",
+            category:"footwear",
+        },
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20220322/i8Wn/6239ead1f997dd03e2261d4e/-473Wx593H-464054193-red-MODEL.jpg ",
+            name: "Geometric Printed Silk Zari Border Saree",
+            price:"395",
+            strickedOffPrice:"1399",
+            category:"saree",
+        },
+        {
+            image: " https://assets.ajio.com/medias/sys_master/root/20211030/ms0i/617c54aff997ddf8f1f2ee71/-473Wx593H-460796859-black-MODEL.jpg",
+            name: "Ankle-Length Heeled Boots",
+            price:"1155",
+            strickedOffPrice:"2800",
+            category:"footwear",
+        },
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/h48/h32/14289992351774/-473Wx593H-460484998-white-MODEL.jpg ",
+            name: "Hybrid Fuego Wn's Running Sports Shoes",
+            price:"3999",
+            strickedOffPrice:"6899",
+            category:"footwear",
+        },
+        
+        {
+            image: " https://assets.ajio.com/medias/sys_master/root/20220601/7xEQ/6296f1eef997dd03e2561f21/-473Wx593H-469101578-multi-MODEL.jpg",
+            name: "Gold-Plated Temple Necklace & Earrings Set",
+            price:"1390",
+            strickedOffPrice:"7990",
+            category:"jewellary",
+        },
+        
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20220711/0CJN/62cc04ecaeb26921af6edfe7/-473Wx593H-464627126-green-MODEL.jpg ",
+            name: "Embellished Georgette Saree",
+            price:"1600",
+            strickedOffPrice:"4000",
+            category:"saree",
+        },
+       
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20220224/C6ar/62176f41f997dd03e2edbddd/-473Wx593H-463890079-maroon-MODEL.jpg ",
+            name: "Embellished Silk Saree",
+            price:"1800",
+            strickedOffPrice:"3999",
+            category:"saree",
+        },
+        {
+            image: " https://assets.ajio.com/medias/sys_master/root/20220413/AoST/6255ddc2aeb26921af1ce30a/-473Wx593H-469157756-green-MODEL.jpg",
+            name: "Basket-Weave Thong-Strap Slip-On Wedges",
+            price:"1249",
+            strickedOffPrice:"2599",
+            category:"footwear",
+        },
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20211012/7Ep0/6165bdaef997dd3ed46cd75b/janasya_white_straight_kurta_set_with_dupatta.jpg ",
+            name: "Straight Kurta Set With Dupatta",
+            price:"1349",
+            strickedOffPrice:"2499",
+            category:"kurta",
+        },
+        {
+            image: " https://assets.ajio.com/medias/sys_master/root/20211028/QdHz/6179b64cf997ddf8f1edf1a9/-473Wx593H-463232409-orange-MODEL.jpg",
+            name: "Solid Lace Worked Saree",
+            price:"699",
+            strickedOffPrice:"2780",
+            category:"saree",
+        },
+       
+        {
+            image: " https://assets.ajio.com/medias/sys_master/root/20220606/dVEo/629e3a59f997dd03e26712e8/-473Wx593H-464448715-beige-MODEL.jpg",
+            name: "Traditional Saree with Blouse Piece",
+            price:"2319",
+            strickedOffPrice:"3999",
+            category:"saree",
+        },
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20220102/qpVV/61d138e1aeb2695cdd020148/-473Wx593H-4919461940-bare-MODEL2.jpg ",
+            name: "Pro Lipstick Collection Bare",
+            price:"899",
+            strickedOffPrice:"1250",
+            category:"makeup",
+        },
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20220523/by45/628b9b8daeb26921afc8d106/aks_white_floral_print_anarkali_kurta_with_tie-up.jpg ",
+            name: "Floral Print Anarkali Kurta with Tie-Up",
+            price:"680",
+            strickedOffPrice:"1699",
+            category:"kurta",
+        },
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20220317/IwGk/62332bb6aeb26921afe12b2f/-473Wx593H-4924943710-cherrywine-MODEL.jpg ",
+            name: "Matte Lipstick - Cherry Wine",
+            price:"185",
+            strickedOffPrice:"499",
+            category:"makeup",
+        },
+       
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20220511/yNby/627b4b24f997dd03e2a6017a/aks_black_chevrons_print_anarkali_kurta_set.jpg ",
+            name: "Chevrons Print Anarkali Kurta Set",
+            price:"1800",
+            strickedOffPrice:"3999",
+            category:"kurta",
+        },
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20220111/YBwV/61dda485f997dd66231b74f1/-473Wx593H-4900324650-black-MODEL.jpg ",
+            name: "Water Tight Mascara - Black 8ml",
+            price:"449",
+            strickedOffPrice:"550",
+            category:"makeup",
+        },
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20220405/3o8e/624b622baeb26921af0b6bef/-473Wx593H-464123799-grey-MODEL.jpg ",
+            name: "Georgette Saree With Sequence Lace Border",
+            price:"750",
+            strickedOffPrice:"2400",
+            category:"saree",
+        },
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20220102/TgWd/61d13e8af997dd66230d6088/-473Wx593H-4914191080-multi-MODEL.jpg ",
+            name: "Skin Lightening Cream",
+            price:"300",
+            strickedOffPrice:"399",
+            category:"makeup",
+        },
+        
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20211229/P3C5/61cb9e27f997ddf8f16733cb/-473Wx593H-4919442670-dontholdback-MODEL.jpg ",
+            name: "Cheek Kit - Dont Hold Back",
+            price:"850",
+            strickedOffPrice:"990",
+            category:"makeup",
+        },
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20220823/gqeg/6304e934f997dd394c159de8/-473Wx593H-469222627-multi-MODEL5.jpg ",
+            name: "Stone-Studded Necklace & Earrings Set",
+            price:"419",
+            strickedOffPrice:"2899",
+            category:"jewellary",
+        },
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20210421/DGZj/607f4b46aeb269a9e398173d/-473Wx593H-462329080-purple-MODEL.jpg ",
+            name: "Straight Kurta Set with Lace Hem",
+            price:"999",
+            strickedOffPrice:"2599",
+            category:"kurta",
+        },
+        
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20211111/dINy/618d54fcf997ddf8f10284a6/-473Wx593H-463302704-white-MODEL.jpg ",
+            name: "Pearl Beaded Mang Tikka",
+            price:"477",
+            strickedOffPrice:"2460",
+            category:"jewellary",
+        },
+       
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20220617/4RIa/62ac4ca3aeb26921af31c06a/-473Wx593H-464468349-teal-MODEL.jpg",
+            name:"Embellished Semi-stitched Anarkali",
+            price:"2400",
+            strickedOffPrice:"4980",
+            category:"kurta",
+        } ,
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20220727/TGNc/62e0faf3f997dd03e2fe3675/-473Wx593H-463090498-yellow-MODEL.jpg",
+            name:"Floral Print Linen Saree",
+            price:"800",
+            strickedOffPrice:"3000",
+            category:"saree",
+        } , 
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20220325/IH6b/623d4dadf997dd03e2304c99/-473Wx593H-463863094-pink-MODEL.jpg",
+            name:"Bandhani Print A-line Kurti",
+            price:"880",
+            strickedOffPrice:"1900",
+            category:"kurta",
+        } , 
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20211228/hKqh/61ca4edbf997ddf8f164ed6b/-473Wx593H-4919438170-pinklady-MODEL.jpg",
+            name:"Hypergel Nailpaint - Ferrari Red 509",
+            price:"81",
+            strickedOffPrice:"95",
+            category:"makeup",
+        },  
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20220607/hPHE/629e5336f997dd03e26743c4/-473Wx593H-469205518-beige-MODEL.jpg",
+            name:"T-strap Flat Sandals",
+            price:"690",
+            strickedOffPrice:"1800",
+            category:"footwear",
+        },  
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20220525/vaAX/628d5b1caeb26921afd2aac0/-473Wx593H-464383786-black-MODEL.jpg",
+            name:"Embellished Unstitched Dress Material",
+            price:"594",
+            strickedOffPrice:"2728",
+            category:"kurta",
+        },  
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20220707/LZIi/62c6f2a2f997dd03e2c266cb/-473Wx593H-469022300-red-MODEL.jpg",
+            name:"Set of 4 Ruby-Studded Bangles",
+            price:"279",
+            strickedOffPrice:"1995",
+            category:"jewellary",
+        },  
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20220810/y1V5/62f3dc32f997dd03e23a4a85/-473Wx593H-469219198-black-MODEL.jpg",
+            name:"Open-Toe Chunky Heeled Sandals",
+            price:"855",
+            strickedOffPrice:"1899",
+            category:"footwear",
+        },{
+            image: "https://assets.ajio.com/medias/sys_master/root/20220323/XnJg/623ad0c5f997dd03e227cfcb/-473Wx593H-4925003010-naturalbeige-MODEL.jpg",
+            name:"Concealer Stick Cum Primer",
+            price:"375",
+            strickedOffPrice:"500",
+            category:"makeup",
+        }  ,
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20220727/OlcX/62e0f1d9aeb26921afa18960/-473Wx593H-462998187-pink-MODEL.jpg",
+            name:"Floral Printed Georgette Ruffled Saree",
+            price:"1300",
+            strickedOffPrice:"2199",
+            category:"saree",
+        }  ,
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20210918/46yX/6144e3b8f997ddce89cbd676/-473Wx593H-462975703-gold-MODEL.jpg",
+            name:"Set of 7 Stone-Studded Finger Rings",
+            price:"289",
+            strickedOffPrice:"1699",
+            category:"jewellary",
+        }  ,
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20200923/b9pw/5f6b6364f997dd8c834af177/-473Wx593H-460303158-tan-MODEL.jpg",
+            name:"Embellished T-strap Flat Sandals with Toe-Ring",
+            price:"460",
+            strickedOffPrice:"1840",
+            category:"footwear",
+        }  ,
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20210805/Ug4q/610c0fbb7cdb8cb824edc2cf/-473Wx593H-6005447900-multi-MODEL.jpg",
+            name:"925 Silver Enamel Pendant Necklace",
+            price:"2640",
+            strickedOffPrice:"3300",
+            category:"jewellary",
+        }  ,
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20220606/Apa2/629e13a6f997dd03e265b4f6/-473Wx593H-464442170-multi-MODEL.jpg",
+            name:"Pack of 3 Micro Print Saree",
+            price:"1203",
+            strickedOffPrice:"5231",
+            category:"saree",
+        }  ,
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20220714/ag8r/62d0423baeb26921af7ac2b1/-473Wx593H-469229826-multi-MODEL.jpg",
+            name:"Paisley Print Triangular Chunky Heeled Sandals",
+            price:"960",
+            strickedOffPrice:"2999",
+            category:"footwear",
+        }  ,
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20220112/BoBo/61de7481aeb2695cdd10fb6a/-473Wx593H-4919429370-aventurine-MODEL.jpg",
+            name:"Glitz Waterproof Eyeliner ",
+            price:"289",
+            strickedOffPrice:"379",
+            category:"makeup",
+        }  ,
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20210622/1btG/60d20000aeb269a9e3070f65/-473Wx593H-460881691-white-MODEL.jpg",
+            name:"Low-Top Sports Shoes with Lace Fastening",
+            price:"1483",
+            strickedOffPrice:"2700",
+            category:"footwear",
+        }  ,
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20220513/RJkD/627d76a9f997dd03e2b51711/-473Wx593H-464324580-cream-MODEL.jpg",
+            name:"Floral Print Saree",
+            price:"1000",
+            strickedOffPrice:"4399",
+            category:"saree",
+        }  ,
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20220218/UI6U/620ea360f997dd03e2d680bf/-473Wx593H-6005968380-multi-MODEL.jpg",
+            name:"925 Sterling Silver Ring",
+            price:"2025",
+            strickedOffPrice:"4799",
+            category:"jewellary",
+        }  ,
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20211230/Vd6w/61ccee3af997ddf8f1696ed6/-473Wx593H-4924929840-no371646-MODEL.jpg",
+            name:"Mineral Blusher Kit 3716-4-6",
+            price:"319",
+            strickedOffPrice:"375",
+            category:"makeup",
+        } ,
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20220117/ig1s/61e55e95f997dd662324fde6/-473Wx593H-463669997-navy-MODEL.jpg ",
+            name: "Embellished A-line Kurta Sets",
+            price:"874",
+            strickedOffPrice:"2299",
+            category:"kurta",
+        }, 
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20220502/kSVH/626fcac9f997dd03e28d9364/-473Wx593H-464268160-white-MODEL.jpg ",
+            name: "Embroidered Canvas Slip on Bellies",
+            price:"747",
+            strickedOffPrice:"2400",
+            category:"footwear",
+        }, 
+        {
+            image: "https://assets.ajio.com/medias/sys_master/root/20220129/vBL7/61f51d25aeb2695cdd403cfd/-473Wx593H-462600015-pink-MODEL.jpg ",
+            name: "Beaded Jewellery Set",
+            price:"820",
+            strickedOffPrice:"2880",
+            category:"jewellary",
+        },  
+    ]
+     display(Womens_Data);
+  var count = Womens_Data.length;
+  document.getElementById("count").innerText = count;
+
+function display(data){
+  document.querySelector("#product").innerText = "";
+    data.map(function(elem){
+    var box = document.createElement("div");
+    box.setAttribute("class","box");
+    var pic = document.createElement("img");
+    pic.setAttribute("src",elem.image);
+    pic.setAttribute("alt",elem.name);
+    var name = document.createElement("h4");
+    name.innerText = elem.name;
+    var price = document.createElement("p");
+    price.innerText =  "₹ "+elem.price;
+    price.setAttribute("class","manage")
+    var strickedprice = document.createElement("p");
+    strickedprice.innerText = "MRP₹ "+elem.strickedOffPrice;
+    strickedprice.setAttribute("class","offprice");
+    var btn = document.createElement("button");
+    btn.innerText = "Add to Cart";
+    btn.setAttribute("id","btn")
+    btn.addEventListener("click",function(){
+      addToCart(elem);
+    })
+    box.append(pic,name,price,strickedprice,btn);
+    document.getElementById("product").append(box);
+   })
+  }
+
+  function defaul(){
+     display(Womens_Data);
+     count = Womens_Data.length;
+     document.getElementById("count").innerText = count;
+     document.getElementById("changeHead").innerText = "Womens wear & Accessories"
+  }
+
+   function kurta(){
+    var filter = Womens_Data.filter(function(elem){
+      return elem.category === "kurta";
+    });
+     display(filter);
+     count = filter.length;
+     document.getElementById("count").innerText = count;
+     document.getElementById("changeHead").innerText = "Womens Kurti"
+    //  handlePriceSort(filter);
+    //  console.log(filter);
+
+   }
+
+   function saree(){
+    var filter = Womens_Data.filter(function(elem){
+      return elem.category === "saree";
+    });
+     display(filter);
+     count = filter.length;
+     document.getElementById("count").innerText = count;
+     document.getElementById("changeHead").innerText = "Womens Saree"
+   }
+
+   function makeup(){
+    var filter = Womens_Data.filter(function(elem){
+      return elem.category === "makeup";
+    });
+     display(filter);
+     count = filter.length;
+     document.getElementById("count").innerText = count;
+     document.getElementById("changeHead").innerText = "Womens Makeup Products"
+     
+   }
+
+   function jewellary(){
+    var filter = Womens_Data.filter(function(elem){
+      return elem.category === "jewellary";
+    });
+     display(filter);
+     count = filter.length;
+     document.getElementById("count").innerText = count;
+     document.getElementById("changeHead").innerText = "Jewellary"
+   }
+
+   function footwear(){
+    var filter = Womens_Data.filter(function(elem){
+      return elem.category === "footwear";
+    });
+     display(filter);
+     handlePriceSort(filter);
+     count = filter.length;
+     document.getElementById("count").innerText = count;
+     document.getElementById("changeHead").innerText = "Womens Footwear"
+   }
+
+   function handlePriceSort(){
+    var PriceOrder = document.getElementById("sortPrice").value;
+      if(PriceOrder === "high"){
+         Womens_Data.sort(function(a,b){
+          return b.price - a.price;
+        });
+        display(Womens_Data);
+      }
+      if(PriceOrder === "low"){
+        Womens_Data.sort(function(a,b){
+          return a.price - b.price;
+        });
+        display(Womens_Data);
+   }
+  }
+   
+  var cartItem = JSON.parse(localStorage.getItem("CartItems")) || [];
+  function addToCart(elem){
+     cartItem.push(elem);
+     localStorage.setItem("CartItems",JSON.stringify(cartItem));
+  }
+  </script>
