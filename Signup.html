@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trial signup</title>
+    <style>
+        h1{
+            text-align: center;
+            color: orange;
+            margin-top: 10px;
+        }
+        #container{
+            height: 700px;
+            
+            width: 35%;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        }
+        #main{
+    width: 75%;
+    height: auto;
+    padding: 50px 60px 30px 50px;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: -50px;
+    
+}
+h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"]
+{
+ width: 100%;
+ margin-bottom:20px;
+ padding: 10px;
+ border-radius: 5px;
+ border: 1px solid gray;
+ font-size: 15px;
+}
+::placeholder{
+    color: gray;
+}
+label{
+    font-size: 20px;
+    display: flex;
+    margin-bottom: 10px;
+}
+input[type="submit"]{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: px;
+    border: 1px solid wheat;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-sizing: content-box;
+    background-color: wheat;
+    
+}
+input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: orange;
+}
+#pass+p{
+    font-size: 14px;
+    margin: 20px 10px 30px 0px;
+    color: gray;
+    text-align: center;
+}
+form+p{
+    font-size: 18px;
+    text-align: center;
+    color: gray;
+}
+form+p>a{
+    margin-left: 10px;
+}
+    </style>
+</head>
+<body>
+    <div id="outside">
+        <div id="container">
+            <div>
+              <h1>Welcome to AJIO</h1>  
+            </div>
+
+            <div id="main">
+                <h2>Sign Up</h2>
+                <form action="">
+                    <label for="">Full Name</label>
+                    <input required id="name" placeholder="Enter Your Full Name" type="text">
+                    <label for="">Email</label>
+                    <input required id="mail" placeholder="Enter Email Address" type="email">        
+                    <label for="">Password</label>
+                    <input required id="pass" placeholder="Enter Password" type="password">
+            
+                    <p>By signing up, I accept the <a href="https://www.ajio.com/help/termsAndCondition">Terms & Condition</a></p>
+                    <input value="SIGN UP" type="submit">   
+                </form>
+                <p>Already have an account?<a href="http://127.0.0.1:5500/AJIO-clone-/Login.html">Log In</a></p>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    let form = document.querySelector("form");
+
+let userData = JSON.parse(localStorage.getItem("SignupData")) || [];
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  let data = {
+    name: form.name.value,
+    email: form.mail.value,
+    password: form.pass.value,
+  }
+  
+  if(checkEmails(data.email)===true){
+    userData.push(data);
+    alert("Account Created Succesfully");
+    localStorage.setItem("SignupData",JSON.stringify(userData));
+  }
+  else{
+    alert("\n"+"\n"+"Account with this Email already exists"+"\n"+"\n"+"\n"+"Please Log In !")
+  }
+});
+
+
+function checkEmails(email){
+    let filtered = userData.filter(function(element){
+        return email === element.email;
+    })
+    if(filtered.length>0){
+        return false;
+    }
+    else{
+        return true;
+    }
+
+}
+</script>
