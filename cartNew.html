@@ -241,6 +241,7 @@
     window.location.href = "./emptyCart.html";
   }
   var totalAmount = 0;
+  var couponApplied=false;
   calculateTotalCartAmount()
   display(cart);
 
@@ -334,10 +335,10 @@
   })
   function applyCoupon(){
     var couponCode = document.getElementById('coupon-input').value
-    console.log("---cou--",couponCode)
-    if(couponCode=="FIRSTBUY"){
+    if(couponCode=="FIRSTBUY"&&couponApplied==false){
         totalAmount=totalAmount-500;
-    }else if(couponCode == "AJIO_USER"){
+        couponApplied=true;
+    }else if(couponCode == "AJIO_USER"&&couponApplied==false){
         totalAmount=totalAmount-250;
     }
     document.getElementById('total-amount').innerText = `Rs. ${totalAmount}`
