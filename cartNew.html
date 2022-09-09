@@ -305,6 +305,8 @@
   function dltFromCart(index){
      cart.splice(index,1);
      localStorage.setItem("CartItems",JSON.stringify(cart));
+     calculateTotalCartAmount()
+
      display(cart);
   }
   function decrementValue(index, itemQuantity){
@@ -337,10 +339,10 @@
     var couponCode = document.getElementById('coupon-input').value
     if(couponCode=="FIRSTBUY"&&couponApplied==false){
         totalAmount=totalAmount-500;
-        couponApplied=true;
     }else if(couponCode == "AJIO_USER"&&couponApplied==false){
         totalAmount=totalAmount-250;
     }
+    couponApplied=true;
     document.getElementById('total-amount').innerText = `Rs. ${totalAmount}`
   document.getElementById('bag-total').innerText = `Rs. ${totalAmount}`
   }
