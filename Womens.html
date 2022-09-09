@@ -6,111 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Women wear & Accessories</title>
     <style>
- #navbar{
-            height:72px;
-            width:100%;
-            margin: auto;
-            border-top: 3px solid rgb(47,66,84);
-            display: flex;
-            position: fixed;
-            z-index: 10;
-            background-color: white;
-    
-        }
-        #navbar-left{
-            height:65px;
-            width:25%;
-            border:1px solid transparent;
-            margin-left: 80px;
-    
-        }
-        #navbar-right{
-            height:100%;
-            width:60%;
-            border:1px solid transparent;
-            margin-right: 50px;
-            margin-left: 50px;
-            
-    
-        }
-        #right-upper{
-            height:50% ;
-            width:100%;
-            border:1px solid transparent;
-            display:flex;
-            justify-content: right;
-            gap:22px;
-            align-items: center;
-        }
-        #right-upper:hover{
-            cursor: pointer;
-        }
-        #right-lower{
-            height:50% ;
-            width:100%;
-            border:1px solid transparent;
-            display:flex;
-            justify-content: space-around;
-            align-items: center;
-            font-family: sans-serif;
-            font-size: 14px;
-            color:rgb(106,106,106);
-            margin-top: 3px;
-        }
-        #rl:hover{
-            font-weight: bold;
-            cursor: pointer;
-        }
-        #site-logo{
-            height:100%;
-            width:35%;
-            margin-left: 60px;
-        }
-        #navbar-button{
-            height:100%;
-            background-color: black;
-            color:white;
-            font-size: 12px;
-            font-family: sans-serif;
-            margin-right: 30px;
-            cursor: pointer;
-           
-        }
-        #navbar-input{
-            border-radius: 15px;
-            width: 250px;
-            height:25px;
-    
-        }
-        #ru{
-            font-size: 12px;
-            color:rgb(106,106,106);
-            text-decoration: none;
-            font-family: sans-serif;
-        }
-        #navbar-image{
-            height:100px;
-            width:100%;
-            border:1px solid transparent;
-            margin-top: 10px;
-            
-        }
-        #navbar-img{
-            height:100%;
-            width:100%;
-        }
-        #bar-img{
-            height:100%;
-            width:4%;
-            cursor: pointer;
-            background-color: rgb(47,66,84);
-            color: white;
-        }
+   #ajio{
+display: flex;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+ justify-content: space-evenly;
+ width: 90%;
+ background-color: white;
+ margin-left: 80px;
+}
+.fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 84px;
+   background-color:white;
+  }
+
+p{
+    border: none;
+    color:black;
+    padding: 10px 10px;
+    margin-top: 30px;
+}
+
+#box{
+   flex-grow: .6;
+ margin-top: 15px;
+ text-align: center;
+}
+#box img{
+    height: 38px;
+    width: 130px;; 
+}
+.ajio>div{
+    align-items: center;
+}
+#topBtn1{
+    color: #2c4152;
+    font: 14px ScourceSansPro;
+    border: 0;
+    background-color: white;
+    cursor:pointer;
+}
+#topBtn2{
+    color: #2c4152;
+    margin-left: 13px;
+   font: 14px ScourceSansPro;
+    border: 0;
+    background-color: white;
+}
+#search{
+    margin-top: 12px;
+    border-radius: 20px;
+    padding: 10px;
+    width: 200px;
+    background-color: #fffded;
+}
+#searchimg{
+ margin-left:-30px;
+ cursor:pointer;
+ width: 100px;
+
+}
+.ajioluxe{
+   margin-right:-210px;
+   padding:4px 9px 4px 9px;
+   border:0;
+   background-color:black;
+   color:white;
+   cursor:pointer;
+}
+#wishlist{
+    margin-top: 30px;
+    border: 0;
+    background-color: white;
+}
+#wishlist img{
+    height: 38px;
+}
+#bag{
+    margin-top: 27px;
+    border: 0;
+    background-color: white;
+}
+#bag img{
+    height: 47px;
+}
+a{
+    text-decoration:none;
+}
+/* ---------  */
     #parent{
       display: flex;
       gap: 20px;
-      margin-top: 100px;
-      position: absolute;
+      margin-top: 85px;
     }
     #child1{
       width: 20%;
@@ -120,16 +112,15 @@
       text-align: center;
       color: rgb(120, 58, 58);
     }
-    .child2{
+    #child2{
       display: block;
       width: 80%;
       margin-left: 270px;
-      /* position: absolute; */
     }
-    .box > img{
+    .boxer > img{
       width: 100%;
     }
-    .box{
+    .boxer{
       box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     }
     #btn{
@@ -144,20 +135,24 @@
       background-color:rgb(123, 112, 41);
     }
     .manage{
-      margin: -8px;
+      margin: -20px;
     }
     #category{
-      height: 80%;
+      display: flex;
+      /* height: 80%; */
       margin: auto;
       background-color: rgb(253, 246, 237);
-      border: 0.1px solid black;
+      text-align:justify;
     }
-    #category > p{
-      cursor: default;
-      margin-left: 60px;
-      font-size: large;
-      color: rgb(26, 4, 48);
-      font-family: cursive;
+    #category >ul> button{
+      width: 12px;
+      height: 12px;
+      border: none;
+      background-color: rgb(252, 154, 137);
+    }
+    #category >ul> button:hover{
+      background-color: rgb(253, 75, 44);
+      border: none;
     }
     #sortPrice{
       border: none;
@@ -177,7 +172,6 @@
     }
     .categorybox{
       text-align: center;
-      height: 15%;
       background-color: rgb(221, 209, 195);
       border: 0.5px solid black;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -190,50 +184,52 @@
     }
     .offprice{
        text-decoration: line-through;
+       margin: 4px;
     }
     </style>
 </head>
 <body>
-    <div id="navbar">
-        <div id="navbar-left">
-            <img id="site-logo" src="https://assets.ajio.com/static/img/Ajio-Logo.svg" alt="">
-        </div>
-        <div id="navbar-right">
-            <div id="right-upper">
-                <a href=""><p id="ru">Sign In / Join AJIO</p></a>
-                <a href=""><p id="ru">Customer Care</p></a>
-                <button id="navbar-button">Visit AJIOLUXE</button>
+    <nav class="fixed-nav-bar">
+        <div id="ajio">
+          <div id="box"><a href="HomePage.html"><img src="	https://assets.ajio.com/static/img/Ajio-Logo.svg" alt="Ajio-Logo"> </div></a>
+          <div id="men"><a href="Mens.html"><P>MEN</P></a></div>
+          <div id="women"><a href="Womens.html"><P>WOMEN</P></a></div>
+          <div id="kids"><a href="Kids.html"><P>KIDS</P></a></div>
+          <div id="indie"><P>INDIE</P> </div>
+          <div id="home&kitchen"><a href=" Kitchen.html"><P>HOME AND KITCHEN</P></a> </div>
+          <div>
+              <div>
+                <div><a href="Login.html"><button id="topBtn1">Sign In/Join AJIO</button></a>
+                <button id="topBtn2">Customer Care</button></div>
+             </div>
+              <input type="text"  id="search" placeholder="Search AJIO">
+              <i id="searchimg" type="submit" class="fa fa-search"></i>
             </div>
-            <div id="right-lower">
-                <p id="rl">MEN <a href="Mens.html"></a></p>
-                <p id="rl">WOMEN</p>
-                <p id="rl">KIDS</p>
-                <p id="rl">INDIE</p>
-                <p id="rl">HOME AND KITCHEN</p>
-                <input id="navbar-input" type="text" placeholder="Search AJIO">
-                <img id="bar-img" src="https://i.pinimg.com/originals/fc/fa/0c/fcfa0c367d786deeaf42dec2fda70e47.png" alt="">
-                <img id="bar-img"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjHuCTCHiz7-sR9YwmlVHDZ0UXU-tcjDRIzmGlub9of64k0gsAJXe29kR-9Bpfj1f_YAg&usqp=CAU" alt="">
-            </div>
-        </div>
-        </div>
+            <div><a href ="ajioluxe.html"><button class="ajioluxe">Visit AJIOLUXE</button></a></div>
+            <div id="wishlist"><a href="Wishlist.html"><img src="https://assets.ajio.com/static/img/wishlistIcon.svg" alt="Wishlist"></a></div>
+            <div id="bag"><a href="Cart.html"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjHuCTCHiz7-sR9YwmlVHDZ0UXU-tcjDRIzmGlub9of64k0gsAJXe29kR-9Bpfj1f_YAg&usqp=CAU"></a></div>
+         </div>
+      </div>
+      </nav>
     <div id="parent">
       <div id="child1">
         <div class="categorybox">
           <h2>Category :</h2>
         </div>
         <div id="category">
-          <!-- <button onclick="shirt()"></button> -->
-          <p onclick="defaul()"> * All</p>
-          <p onclick="kurta()"> * Kurti</p>
-         <p onclick="saree()">* Saree</p>
-         <p onclick="makeup()">* Makeup</p>
-         <p onclick="jewellary()">* Jewellery</p>
-         <p onclick="footwear()">* Footwear</p>
+            <ul>
+          <button onclick="defaul()"></button> Default<br><br>
+          <button onclick="kurta()"></button> Kurti<br><br>
+         <button onclick="saree()"></button> Saree<br><br>
+         <button onclick="makeup()"></button> Makeup<br><br>
+         <button onclick="jewellary()"></button> Jewellery<br><br>
+         <button onclick="footwear()"></button> Footwear<br><br>
+         </ul>
         </div>
       </div>
-      <div class="child2">
+      <div id="child2">
         <div id="pronav">
-          <select id="sortPrice">
+          <select id="sortPrice" onchange="handlePriceSort()">
             <option value="">Sort by Price</option>
             <option value="high">High to Low</option>
             <option value="low">Low to High</option>
@@ -250,7 +246,7 @@
       var Womens_Data = [
     {
             image: "https://assets.ajio.com/medias/sys_master/root/20210814/Z7FO/6116bcb67cdb8cb824f74850/-473Wx593H-4912365350-black-MODEL.jpg ",
-            name: "10hr Smudge-Proof Khole Kajal Intense Black",
+            name: "10hr Smudge-Proof Kajal Intense Black",
             price:"75",
             strickedOffPrice:"149",
             category:"makeup",
@@ -670,13 +666,13 @@
      display(Womens_Data);
   var count = Womens_Data.length;
   document.getElementById("count").innerText = count;
-//   handlePriceSort(Womens_Data);
+  var tempData = Womens_Data;
 
 function display(data){
   document.querySelector("#product").innerText = "";
     data.map(function(elem){
     var box = document.createElement("div");
-    box.setAttribute("class","box");
+    box.setAttribute("class","boxer");
     var pic = document.createElement("img");
     pic.setAttribute("src",elem.image);
     pic.setAttribute("alt",elem.name);
@@ -704,6 +700,7 @@ function display(data){
      count = Womens_Data.length;
      document.getElementById("count").innerText = count;
      document.getElementById("changeHead").innerText = "Womens wear & Accessories"
+     tempData = Womens_Data;
   }
 
    function kurta(){
@@ -714,8 +711,7 @@ function display(data){
      count = filter.length;
      document.getElementById("count").innerText = count;
      document.getElementById("changeHead").innerText = "Womens Kurti"
-    //  handlePriceSort(filter);
-    //  console.log(filter);
+    tempData = filter;
 
    }
 
@@ -727,6 +723,7 @@ function display(data){
      count = filter.length;
      document.getElementById("count").innerText = count;
      document.getElementById("changeHead").innerText = "Womens Saree"
+     tempData = filter;
    }
 
    function makeup(){
@@ -737,7 +734,7 @@ function display(data){
      count = filter.length;
      document.getElementById("count").innerText = count;
      document.getElementById("changeHead").innerText = "Womens Makeup Products"
-     
+     tempData = filter;
    }
 
    function jewellary(){
@@ -748,6 +745,7 @@ function display(data){
      count = filter.length;
      document.getElementById("count").innerText = count;
      document.getElementById("changeHead").innerText = "Jewellary"
+     tempData = filter;
    }
 
    function footwear(){
@@ -758,26 +756,22 @@ function display(data){
      count = filter.length;
      document.getElementById("count").innerText = count;
      document.getElementById("changeHead").innerText = "Womens Footwear";
-
-    //  document.querySelector("#sortPrice").addEventListener("change",function(){
-    //     handlePriceSort(elem);
-    //  });
+     tempData = filter;
    }
 
-   document.querySelector("#sortPrice").addEventListener("change",handlePriceSort);
    function handlePriceSort(){
     var PriceOrder = document.getElementById("sortPrice").value;
       if(PriceOrder === "high"){
-         Womens_Data.sort(function(a,b){
+         tempData.sort(function(a,b){
           return b.price - a.price;
         });
-        display(Womens_Data);
+        display(tempData);
       }
       if(PriceOrder === "low"){
-        Womens_Data.sort(function(a,b){
+       tempData.sort(function(a,b){
           return a.price - b.price;
         });
-        display(Womens_Data);
+        display(tempData);
    }
   }
    
